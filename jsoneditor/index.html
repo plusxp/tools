@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>JSONEditor | Custom styling</title>
+
+  <link href="js/jsoneditor.css" rel="stylesheet" type="text/css">
+  <script src="js/jsoneditor.js"></script>
+
+  <style type="text/css">
+    #jsoneditor {
+      width: 100vw;
+      height: 100vh;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+  </style>
+
+  <link href="./css/darktheme.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+
+<div id="jsoneditor"></div>
+
+<script>
+  // create the editor
+  var container = document.getElementById('jsoneditor');
+  var options = {
+    modes: ['text', 'tree']
+  };
+  var json = {
+    'array': [1, 2, 3],
+    'boolean': true,
+    'null': null,
+    'number': 123,
+    'object': {'a': 'b', 'c': 'd'},
+    'string': 'Hello World'
+  };
+  var editor = new JSONEditor(container, options, json);
+</script>
+</body>
+</html>

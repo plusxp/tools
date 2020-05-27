@@ -1,0 +1,65 @@
+GEEKO CMS v1.03 SOFTWARE LICENSE AGREEMENT
+--------------------------------------------------------------------------
+
+
+Copyright (c) 2003 Online Business( info@online-business.ro) All rights reserved. 
+
+This user license agreement (the "AGREEMENT") is an agreement 
+
+between you (individual or single entity) and Online Business, 
+
+for the JS CMS software (the "SOFTWARE") that is 
+
+accompanying this AGREEMENT. 
+
+The SOFTWARE is the property Online Business and is 
+
+protected by copyright laws and international copyright treaties. 
+
+The SOFTWARE is not sold and it is not licensed. It is Freeware. 
+
+ 
+
+If you accept the terms and conditions of this AGREEMENT, you 
+
+have certain rights and obligations as follows:
+
+YOU MAY:
+
+1. Install and use unlimited copies of the JS CMS.
+
+2. . Distribute, sublicense, rent or lease the JS CMS.
+
+YOU MAY NOT: 
+
+1. Decompile, disassemble, reverse engineer or modify the 
+
+JS CMS or any portion of it.
+
+ 
+
+DISTRIBUTION:
+
+You are hereby licensed to make unlimited copies of the JS CMS. You are allowed to sell and distribute 
+
+ it to anyone. However copyright notices must not be changed. 
+
+ 
+
+WARRANTY DISCLAIMER
+
+YOU HEREBY EXPRESSLY WAIVE ALL WARRANTIES. 
+
+
+
+DISCLAIMER OF DAMAGES
+
+Online Business assumes no liability for damages, direct or 
+
+consequential, which may result from the use of the SOFTWARE, 
+
+even if Online Business has been advised of the possibility 
+
+of such damages. The software is provided as is. 
+
+ 

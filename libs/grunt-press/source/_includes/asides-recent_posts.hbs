@@ -1,0 +1,10 @@
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    {{#each (limit site.posts undefined) as |post|}}
+      <li class="post">
+        <a href="{{ root_url }}{{{ post.url }}}">{{#if site.titlecase}}{{titlecase post.title}}{{else}}{{{ post.title }}}{{/if}}</a>
+      </li>
+    {{/each}}
+  </ul>
+</section>

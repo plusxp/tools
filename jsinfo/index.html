@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+	<p>This page shows some information that a browser can transmit to the Web server. All this data helps trackers uniquely identify devices and build up profiles of people who use them. No data has been recorded from this page.</p>
+
+	<section>
+		<br>
+		<h2>Browser</h2>
+		<div class='list'>navigator.appName: <script>document.write(navigator.appName);</script></div>
+		<div class='list'>navigator.vendor: <script>document.write(navigator.vendor);</script></div>
+		<div class='list'>navigator.product: <script>document.write(navigator.product);</script></div>
+		<div class='list'>navigator.appCodeName: <script>document.write(navigator.appCodeName);</script></div>
+		<div class='list'>navigator.appVersion: <script>document.write(navigator.appVersion);</script></div>
+		<div class='list'>navigator.appMinorVersion: <script>document.write(navigator.appMinorVersion);</script></div>
+		<div class='list'>navigator.buildID: <script>document.write(navigator.buildID);</script></div>
+		<div class='list'>navigator.vendorSub: <script>document.write(navigator.vendorSub);</script></div>
+		<div class='list'>navigator.productSub: <script>document.write(navigator.productSub);</script></div>
+		<div class='list'>navigator.userAgent: <script>document.write(navigator.userAgent);</script></div>
+		<div class='list'>navigator.doNotTrack: <script>document.write(navigator.doNotTrack);</script></div>
+		<div class='list'>navigator.cookieEnabled: <script>document.write(navigator.cookieEnabled);</script></div>
+		<div class='list'>navigator.language: <script>document.write(navigator.language);</script></div>
+		<div class='list'>navigator.languages: <script>document.write(navigator.languages);</script></div>
+		<div class='list'>navigator.browserLanguage: <script>document.write(navigator.browserLanguage);</script></div>
+		<div class='list'>navigator.userLanguage: <script>document.write(navigator.userLanguage);</script></div>
+		<div class='list'>navigator.systemLanguage: <script>document.write(navigator.systemLanguage);</script></div>
+		<div class='list'>navigator.mimeTypes: <ul><script>
+			var mimes = navigator.mimeTypes;
+			for (var i=0; i < mimes.length; i++) {
+				document.write('<li>', mimes[i].type, ': ', mimes[i].description, "</li>");
+			}
+		</script></ul></div>
+	</section>
+
+	<section>
+		<br>
+		<h2>Screen</h2>
+		<div class='list'>window.screen.availHeight x window.screen.availWidth: <script>document.write(window.screen.availHeight, ' x ', window.screen.availWidth);</script></div>
+		<div class='list'>window.screen.height x window.screen.width: <script>document.write(window.screen.height, ' x ', window.screen.width);</script></div>
+		<div class='list'>window.screen.colorDepth: <script>document.write(window.screen.colorDepth);</script></div>
+		<div class='list'>window.screen.orientation.type: <script>document.write(window.screen.orientation.type);</script></div>
+		<div class='list'>window.screen.orientation.angle: <script>document.write(window.screen.orientation.angle);</script></div>
+		<div class='list'>window.devicePixelRatio: <script>document.write(window.devicePixelRatio);</script></div>
+	</section>
+
+	<section>
+		<br>
+		<h2>CPU</h2>
+		<div class='list'>navigator.hardwareConcurrency: <script>document.write(navigator.hardwareConcurrency);</script> (numero di core della CPU)</div>
+		<div class='list'>navigator.platform: <script>document.write(navigator.platform);</script></div>
+		<div class='list'>navigator.oscpu: <script>document.write(navigator.oscpu);</script></div>
+	</section>
+
+	<section>
+		<br>
+		<h2>Date</h2>
+		<div class='list'>Date(): <script>document.write(Date());</script></div>
+		<div class='list'>Date().getTimezoneOffset(): <script>d = new Date;document.write(d.getTimezoneOffset());</script></div>
+	</section>
+
+	<section>
+		<br>
+		<h2>Geographic location</h2>
+		<div class='list'>navigator.geolocation: <script>document.write(navigator.geolocation);</script> (se mostra un oggetto, la posizione geografica &egrave; supportata dal browser)</div>
+		<div class='list'>position.coords.latitude: <script>document.write(position.coords.latitude);</script></div>
+		<div class='list'>position.coords.longitude: <script>document.write(position.coords.longitude);</script></div>
+	</section>
+
+	<section>
+		<br>
+		<h2>Plugin</h2>
+		<div class='list'><ul><script>
+			var pluginsLength = navigator.plugins.length;
+			for(var i = 0; i < pluginsLength; i++) {
+				document.write('<li>', navigator.plugins[i].name, " (", navigator.plugins[i].filename, "): ", navigator.plugins[i].description, " (", navigator.plugins[i].version, ")</li>");
+			}
+		</script>
+	</ul></div>
+</section>
+
+<section>
+	<br>
+	<h2>Header http</h2>
+	<div class='list'><ul><script>
+		var req = new XMLHttpRequest();
+		req.open('GET', document.location, false);
+		req.send(null);
+		var headers = req.getAllResponseHeaders().toLowerCase();
+		document.write('<pre>', headers, '</pre>');
+	</script>
+</ul></div>
+</section>
+
+<section>
+	<br>
+	<h2>Multimedia Devices</h2>
+	<div class='list'><ul id='multimedia'><script>
+		navigator.mediaDevices.enumerateDevices().then(function(devices) {
+			devices.forEach(function(device) {
+				document.getElementById("multimedia").innerHTML = document.getElementById("multimedia").innerHTML + '<li>' + device.kind + ": " + device.label + " id = " + device.deviceId + '</li>';
+			});
+		})
+	</script>
+</ul></div>
+</section>
+
+
+</body>
+</html>	

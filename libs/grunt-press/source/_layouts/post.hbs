@@ -1,0 +1,43 @@
+---
+layout: default
+single: true
+---
+
+<div>
+<article class="hentry" role="article">
+  {{> 'article'}}
+  <footer>
+    <p class="meta">
+      {{> 'post/author.hbs'}}
+      {{> 'post/date.hbs'}}{{ time }}{{#if updated}} {{ updated }}{{/if}}
+      {{> 'post/categories.hbs'}}
+    </p>
+    {{#unless (is page.sharing false)}}
+      {{> 'post/sharing.hbs'}}
+    {{/unless}}
+    <p class="meta">
+      {{#if page.previous.url}}
+        <a class="basic-alignment left" href="{{{ page.previous.url }}}" title="Previous Post: {{{ page.previous.title }}}">&laquo; {{{ page.previous.title }}}</a>
+      {{/if}}
+      {{#if page.next.url}}
+        <a class="basic-alignment right" href="{{{ page.next.url }}}" title="Next Post: {{{ page.next.title }}}">{{{ page.next.title }}} &raquo;</a>
+      {{/if}}
+    </p>
+  </footer>
+</article>
+{{#if (and site.disqus_short_name (is page.comments true))}}
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{{> 'post/disqus_thread.hbs'}}</div>
+  </section>
+{{/if}}
+</div>
+{{#unless (is page.sidebar false)}}
+<aside class="sidebar">
+  {{#if site.post_asides.size}}
+    {{>_array post_asides}}
+  {{else}}
+    {{>_array default_asides}}
+  {{/if}}
+</aside>
+{{/unless}}

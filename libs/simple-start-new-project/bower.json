@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Arnel Helja <arnel.helja@domino.it>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sidr": "^2.2.1",
+    "components-font-awesome": "^4.6.3",
+    "pure": "^0.6.0"
+  }
+}

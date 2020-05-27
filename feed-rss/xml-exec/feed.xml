@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+   <channel>
+      <title>My Podcast</title>
+      <description>My Podcast Description</description>
+      <link>https://sketch-2-0-1.sourceforge.io/feed.xml</link>
+      <itunes:image href="https://sketch-2-0-1.sourceforge.io/icon.jpg" />
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/001%20What%20is%20OOP.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/001%20What%20is%20OOP.mp4</link>
+         <title>001 What is OOP.mp4</title>
+         <description>001 What is OOP.mp4</description>
+         <pubDate>Wed, 16 Oct 2019 09:44:43 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/001%20What%20is%20OOP.mp4" type="video/mp4" length="32608428"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/002%20Four%20Pillars%20of%20OOP.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/002%20Four%20Pillars%20of%20OOP.mp4</link>
+         <title>002 Four Pillars of OOP.mp4</title>
+         <description>002 Four Pillars of OOP.mp4</description>
+         <pubDate>Tue, 15 Oct 2019 09:44:47 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/002%20Four%20Pillars%20of%20OOP.mp4" type="video/mp4" length="54776862"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/003%20Setting%20Up%20the%20Development%20Environment.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/003%20Setting%20Up%20the%20Development%20Environment.mp4</link>
+         <title>003 Setting Up the Development Environment.mp4</title>
+         <description>003 Setting Up the Development Environment.mp4</description>
+         <pubDate>Mon, 14 Oct 2019 09:44:48 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/003%20Setting%20Up%20the%20Development%20Environment.mp4" type="video/mp4" length="12981256"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/004%20Course%20Structure.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/004%20Course%20Structure.mp4</link>
+         <title>004 Course Structure.mp4</title>
+         <description>004 Course Structure.mp4</description>
+         <pubDate>Sun, 13 Oct 2019 09:44:48 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/01%20Getting%20Started/004%20Course%20Structure.mp4" type="video/mp4" length="30820189"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/.DS_Store</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/.DS_Store</link>
+         <title>.DS_Store</title>
+         <description>.DS_Store</description>
+         <pubDate>Sat, 12 Oct 2019 09:44:45 +0000</pubDate>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/006%201-%20Introduction.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/006%201-%20Introduction.mp4</link>
+         <title>006 1- Introduction.mp4</title>
+         <description>006 1- Introduction.mp4</description>
+         <pubDate>Fri, 11 Oct 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/006%201-%20Introduction.mp4" type="video/mp4" length="2480806"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/007%202-%20Object%20Literals.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/007%202-%20Object%20Literals.mp4</link>
+         <title>007 2- Object Literals.mp4</title>
+         <description>007 2- Object Literals.mp4</description>
+         <pubDate>Thu, 10 Oct 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/007%202-%20Object%20Literals.mp4" type="video/mp4" length="17551572"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/008%203-%20Factories.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/008%203-%20Factories.mp4</link>
+         <title>008 3- Factories.mp4</title>
+         <description>008 3- Factories.mp4</description>
+         <pubDate>Wed, 09 Oct 2019 09:44:46 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/008%203-%20Factories.mp4" type="video/mp4" length="17815398"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/009%204-%20Constructors.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/009%204-%20Constructors.mp4</link>
+         <title>009 4- Constructors.mp4</title>
+         <description>009 4- Constructors.mp4</description>
+         <pubDate>Tue, 08 Oct 2019 09:44:51 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/009%204-%20Constructors.mp4" type="video/mp4" length="45459744"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/010%205-%20Constructor%20Property.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/010%205-%20Constructor%20Property.mp4</link>
+         <title>010 5- Constructor Property.mp4</title>
+         <description>010 5- Constructor Property.mp4</description>
+         <pubDate>Mon, 07 Oct 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/010%205-%20Constructor%20Property.mp4" type="video/mp4" length="18444995"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/011%206-%20Functions%20are%20Objects.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/011%206-%20Functions%20are%20Objects.mp4</link>
+         <title>011 6- Functions are Objects.mp4</title>
+         <description>011 6- Functions are Objects.mp4</description>
+         <pubDate>Sun, 06 Oct 2019 09:44:46 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/011%206-%20Functions%20are%20Objects.mp4" type="video/mp4" length="35150194"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/012%207-%20Value%20vs%20Reference%20Types.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/012%207-%20Value%20vs%20Reference%20Types.mp4</link>
+         <title>012 7- Value vs Reference Types.mp4</title>
+         <description>012 7- Value vs Reference Types.mp4</description>
+         <pubDate>Sat, 05 Oct 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/012%207-%20Value%20vs%20Reference%20Types.mp4" type="video/mp4" length="34408557"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/013%208-%20Adding%20or%20Removing%20Properties.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/013%208-%20Adding%20or%20Removing%20Properties.mp4</link>
+         <title>013 8- Adding or Removing Properties.mp4</title>
+         <description>013 8- Adding or Removing Properties.mp4</description>
+         <pubDate>Fri, 04 Oct 2019 09:44:43 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/013%208-%20Adding%20or%20Removing%20Properties.mp4" type="video/mp4" length="29387630"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/014%209-%20Enumerating%20Properties.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/014%209-%20Enumerating%20Properties.mp4</link>
+         <title>014 9- Enumerating Properties.mp4</title>
+         <description>014 9- Enumerating Properties.mp4</description>
+         <pubDate>Thu, 03 Oct 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/014%209-%20Enumerating%20Properties.mp4" type="video/mp4" length="24459514"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/015%2010-%20Abstraction.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/015%2010-%20Abstraction.mp4</link>
+         <title>015 10- Abstraction.mp4</title>
+         <description>015 10- Abstraction.mp4</description>
+         <pubDate>Wed, 02 Oct 2019 09:44:50 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/015%2010-%20Abstraction.mp4" type="video/mp4" length="47999218"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/016%2011-%20Private%20Properties%20and%20Methods.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/016%2011-%20Private%20Properties%20and%20Methods.mp4</link>
+         <title>016 11- Private Properties and Methods.mp4</title>
+         <description>016 11- Private Properties and Methods.mp4</description>
+         <pubDate>Tue, 01 Oct 2019 09:44:43 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/016%2011-%20Private%20Properties%20and%20Methods.mp4" type="video/mp4" length="32710661"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/017%20Getters%20and%20Setters.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/017%20Getters%20and%20Setters.mp4</link>
+         <title>017 Getters and Setters.mp4</title>
+         <description>017 Getters and Setters.mp4</description>
+         <pubDate>Mon, 30 Sep 2019 09:44:47 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/017%20Getters%20and%20Setters.mp4" type="video/mp4" length="56618911"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/019%2014-%20Exercise-%20Stop%20Watch.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/019%2014-%20Exercise-%20Stop%20Watch.mp4</link>
+         <title>019 14- Exercise- Stop Watch.mp4</title>
+         <description>019 14- Exercise- Stop Watch.mp4</description>
+         <pubDate>Sun, 29 Sep 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/019%2014-%20Exercise-%20Stop%20Watch.mp4" type="video/mp4" length="13773908"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/020%2015-%20Solution-%20Stopwatch.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/02%20Objects/020%2015-%20Solution-%20Stopwatch.mp4</link>
+         <title>020 15- Solution- Stopwatch.mp4</title>
+         <description>020 15- Solution- Stopwatch.mp4</description>
+         <pubDate>Sat, 28 Sep 2019 09:44:43 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/02%20Objects/020%2015-%20Solution-%20Stopwatch.mp4" type="video/mp4" length="19346541"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/.DS_Store</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/.DS_Store</link>
+         <title>.DS_Store</title>
+         <description>.DS_Store</description>
+         <pubDate>Fri, 27 Sep 2019 09:44:45 +0000</pubDate>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/021%201-%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/021%201-%20Inheritance.mp4</link>
+         <title>021 1- Inheritance.mp4</title>
+         <description>021 1- Inheritance.mp4</description>
+         <pubDate>Thu, 26 Sep 2019 09:44:51 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/021%201-%20Inheritance.mp4" type="video/mp4" length="21124782"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/022%202-%20Prototypes%20and%20Prototypical%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/022%202-%20Prototypes%20and%20Prototypical%20Inheritance.mp4</link>
+         <title>022 2- Prototypes and Prototypical Inheritance.mp4</title>
+         <description>022 2- Prototypes and Prototypical Inheritance.mp4</description>
+         <pubDate>Wed, 25 Sep 2019 09:44:46 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/022%202-%20Prototypes%20and%20Prototypical%20Inheritance.mp4" type="video/mp4" length="45048613"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/023%203-%20Multi-level%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/023%203-%20Multi-level%20Inheritance.mp4</link>
+         <title>023 3- Multi-level Inheritance.mp4</title>
+         <description>023 3- Multi-level Inheritance.mp4</description>
+         <pubDate>Tue, 24 Sep 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/023%203-%20Multi-level%20Inheritance.mp4" type="video/mp4" length="25223184"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/024%204-%20Property%20Descriptors.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/024%204-%20Property%20Descriptors.mp4</link>
+         <title>024 4- Property Descriptors.mp4</title>
+         <description>024 4- Property Descriptors.mp4</description>
+         <pubDate>Mon, 23 Sep 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/024%204-%20Property%20Descriptors.mp4" type="video/mp4" length="35257061"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/025%205-%20Constructor%20Prototypes.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/025%205-%20Constructor%20Prototypes.mp4</link>
+         <title>025 5- Constructor Prototypes.mp4</title>
+         <description>025 5- Constructor Prototypes.mp4</description>
+         <pubDate>Sun, 22 Sep 2019 09:44:50 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/025%205-%20Constructor%20Prototypes.mp4" type="video/mp4" length="25403722"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/026%206-%20Prototype%20vs.%20Instance%20Members.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/026%206-%20Prototype%20vs.%20Instance%20Members.mp4</link>
+         <title>026 6- Prototype vs. Instance Members.mp4</title>
+         <description>026 6- Prototype vs. Instance Members.mp4</description>
+         <pubDate>Sat, 21 Sep 2019 09:44:46 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/026%206-%20Prototype%20vs.%20Instance%20Members.mp4" type="video/mp4" length="50050498"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/027%207-%20Iterating%20Instance%20and%20Prototype%20Members.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/027%207-%20Iterating%20Instance%20and%20Prototype%20Members.mp4</link>
+         <title>027 7- Iterating Instance and Prototype Members.mp4</title>
+         <description>027 7- Iterating Instance and Prototype Members.mp4</description>
+         <pubDate>Fri, 20 Sep 2019 09:44:45 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/027%207-%20Iterating%20Instance%20and%20Prototype%20Members.mp4" type="video/mp4" length="20043851"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/028%208-%20Avoid%20Extending%20the%20Built-in%20Objects.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/028%208-%20Avoid%20Extending%20the%20Built-in%20Objects.mp4</link>
+         <title>028 8- Avoid Extending the Built-in Objects.mp4</title>
+         <description>028 8- Avoid Extending the Built-in Objects.mp4</description>
+         <pubDate>Thu, 19 Sep 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/028%208-%20Avoid%20Extending%20the%20Built-in%20Objects.mp4" type="video/mp4" length="12258360"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/030%2010-%20Exercise.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/030%2010-%20Exercise.mp4</link>
+         <title>030 10- Exercise.mp4</title>
+         <description>030 10- Exercise.mp4</description>
+         <pubDate>Wed, 18 Sep 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/030%2010-%20Exercise.mp4" type="video/mp4" length="13158360"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/031%2011-%20Solution.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/031%2011-%20Solution.mp4</link>
+         <title>031 11- Solution.mp4</title>
+         <description>031 11- Solution.mp4</description>
+         <pubDate>Tue, 17 Sep 2019 09:44:45 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/03%20Prototypes/031%2011-%20Solution.mp4" type="video/mp4" length="59953483"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/.DS_Store</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/.DS_Store</link>
+         <title>.DS_Store</title>
+         <description>.DS_Store</description>
+         <pubDate>Mon, 16 Sep 2019 09:44:51 +0000</pubDate>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/032%201-%20Creating%20Your%20Own%20Prototypical%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/032%201-%20Creating%20Your%20Own%20Prototypical%20Inheritance.mp4</link>
+         <title>032 1- Creating Your Own Prototypical Inheritance.mp4</title>
+         <description>032 1- Creating Your Own Prototypical Inheritance.mp4</description>
+         <pubDate>Sun, 15 Sep 2019 09:44:51 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/032%201-%20Creating%20Your%20Own%20Prototypical%20Inheritance.mp4" type="video/mp4" length="41727786"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/033%202-%20Resetting%20the%20Constructor.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/033%202-%20Resetting%20the%20Constructor.mp4</link>
+         <title>033 2- Resetting the Constructor.mp4</title>
+         <description>033 2- Resetting the Constructor.mp4</description>
+         <pubDate>Sat, 14 Sep 2019 09:44:45 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/033%202-%20Resetting%20the%20Constructor.mp4" type="video/mp4" length="25307751"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/034%203-%20Calling%20the%20Super%20Constructor.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/034%203-%20Calling%20the%20Super%20Constructor.mp4</link>
+         <title>034 3- Calling the Super Constructor.mp4</title>
+         <description>034 3- Calling the Super Constructor.mp4</description>
+         <pubDate>Fri, 13 Sep 2019 09:44:48 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/034%203-%20Calling%20the%20Super%20Constructor.mp4" type="video/mp4" length="37564819"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/035%204-%20Intermediate%20Function%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/035%204-%20Intermediate%20Function%20Inheritance.mp4</link>
+         <title>035 4- Intermediate Function Inheritance.mp4</title>
+         <description>035 4- Intermediate Function Inheritance.mp4</description>
+         <pubDate>Thu, 12 Sep 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/035%204-%20Intermediate%20Function%20Inheritance.mp4" type="video/mp4" length="38531832"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/036%205-%20Method%20Overriding.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/036%205-%20Method%20Overriding.mp4</link>
+         <title>036 5- Method Overriding.mp4</title>
+         <description>036 5- Method Overriding.mp4</description>
+         <pubDate>Wed, 11 Sep 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/036%205-%20Method%20Overriding.mp4" type="video/mp4" length="32090438"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/037%206-%20Polymorphism.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/037%206-%20Polymorphism.mp4</link>
+         <title>037 6- Polymorphism.mp4</title>
+         <description>037 6- Polymorphism.mp4</description>
+         <pubDate>Tue, 10 Sep 2019 09:44:47 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/037%206-%20Polymorphism.mp4" type="video/mp4" length="38735172"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/038%207-%20When%20to%20Use%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/038%207-%20When%20to%20Use%20Inheritance.mp4</link>
+         <title>038 7- When to Use Inheritance.mp4</title>
+         <description>038 7- When to Use Inheritance.mp4</description>
+         <pubDate>Mon, 09 Sep 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/038%207-%20When%20to%20Use%20Inheritance.mp4" type="video/mp4" length="26883049"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/039%208-%20Mixins.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/039%208-%20Mixins.mp4</link>
+         <title>039 8- Mixins.mp4</title>
+         <description>039 8- Mixins.mp4</description>
+         <pubDate>Sun, 08 Sep 2019 09:44:51 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/039%208-%20Mixins.mp4" type="video/mp4" length="57199685"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/041%2010-%20Exercise%20Prototypical%20Inheritence.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/041%2010-%20Exercise%20Prototypical%20Inheritence.mp4</link>
+         <title>041 10- Exercise Prototypical Inheritence.mp4</title>
+         <description>041 10- Exercise Prototypical Inheritence.mp4</description>
+         <pubDate>Sat, 07 Sep 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/041%2010-%20Exercise%20Prototypical%20Inheritence.mp4" type="video/mp4" length="21392511"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/042%2011-%20Solution%20Prototypical%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/042%2011-%20Solution%20Prototypical%20Inheritance.mp4</link>
+         <title>042 11- Solution Prototypical Inheritance.mp4</title>
+         <description>042 11- Solution Prototypical Inheritance.mp4</description>
+         <pubDate>Fri, 06 Sep 2019 09:44:48 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/042%2011-%20Solution%20Prototypical%20Inheritance.mp4" type="video/mp4" length="51923921"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/043%2012-%20Exercise-%20Polymorphism.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/043%2012-%20Exercise-%20Polymorphism.mp4</link>
+         <title>043 12- Exercise- Polymorphism.mp4</title>
+         <description>043 12- Exercise- Polymorphism.mp4</description>
+         <pubDate>Thu, 05 Sep 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/043%2012-%20Exercise-%20Polymorphism.mp4" type="video/mp4" length="15054490"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/044%2013-%20Solution-%20Polymorphism.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/044%2013-%20Solution-%20Polymorphism.mp4</link>
+         <title>044 13- Solution- Polymorphism.mp4</title>
+         <description>044 13- Solution- Polymorphism.mp4</description>
+         <pubDate>Wed, 04 Sep 2019 09:44:43 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/04%20Prototypical%20Inheritance/044%2013-%20Solution-%20Polymorphism.mp4" type="video/mp4" length="48874373"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/.DS_Store</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/.DS_Store</link>
+         <title>.DS_Store</title>
+         <description>.DS_Store</description>
+         <pubDate>Tue, 03 Sep 2019 09:44:43 +0000</pubDate>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/045%201-%20ES6%20Classes.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/045%201-%20ES6%20Classes.mp4</link>
+         <title>045 1- ES6 Classes.mp4</title>
+         <description>045 1- ES6 Classes.mp4</description>
+         <pubDate>Mon, 02 Sep 2019 09:44:50 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/045%201-%20ES6%20Classes.mp4" type="video/mp4" length="40976779"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/046%202-%20Hoisting.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/046%202-%20Hoisting.mp4</link>
+         <title>046 2- Hoisting.mp4</title>
+         <description>046 2- Hoisting.mp4</description>
+         <pubDate>Sun, 01 Sep 2019 09:44:47 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/046%202-%20Hoisting.mp4" type="video/mp4" length="25285978"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/047%203-%20Static%20Methods.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/047%203-%20Static%20Methods.mp4</link>
+         <title>047 3- Static Methods.mp4</title>
+         <description>047 3- Static Methods.mp4</description>
+         <pubDate>Sat, 31 Aug 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/047%203-%20Static%20Methods.mp4" type="video/mp4" length="33087449"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/048%204-%20The%20This%20Keyword.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/048%204-%20The%20This%20Keyword.mp4</link>
+         <title>048 4- The This Keyword.mp4</title>
+         <description>048 4- The This Keyword.mp4</description>
+         <pubDate>Fri, 30 Aug 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/048%204-%20The%20This%20Keyword.mp4" type="video/mp4" length="36676121"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/049%205-%20Private%20Members%20Using%20Symbols.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/049%205-%20Private%20Members%20Using%20Symbols.mp4</link>
+         <title>049 5- Private Members Using Symbols.mp4</title>
+         <description>049 5- Private Members Using Symbols.mp4</description>
+         <pubDate>Thu, 29 Aug 2019 09:44:44 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/049%205-%20Private%20Members%20Using%20Symbols.mp4" type="video/mp4" length="50621578"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/050%20Private%20Members%20Using%20WeakMaps.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/050%20Private%20Members%20Using%20WeakMaps.mp4</link>
+         <title>050 Private Members Using WeakMaps.mp4</title>
+         <description>050 Private Members Using WeakMaps.mp4</description>
+         <pubDate>Wed, 28 Aug 2019 09:44:45 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/050%20Private%20Members%20Using%20WeakMaps.mp4" type="video/mp4" length="57551305"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/051%207-%20Getters%20and%20Setters.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/051%207-%20Getters%20and%20Setters.mp4</link>
+         <title>051 7- Getters and Setters.mp4</title>
+         <description>051 7- Getters and Setters.mp4</description>
+         <pubDate>Tue, 27 Aug 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/051%207-%20Getters%20and%20Setters.mp4" type="video/mp4" length="23501520"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/052%20Inheritance.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/052%20Inheritance.mp4</link>
+         <title>052 Inheritance.mp4</title>
+         <description>052 Inheritance.mp4</description>
+         <pubDate>Mon, 26 Aug 2019 09:44:47 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/052%20Inheritance.mp4" type="video/mp4" length="34271229"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/053%209-%20Method%20Riding.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/053%209-%20Method%20Riding.mp4</link>
+         <title>053 9- Method Riding.mp4</title>
+         <description>053 9- Method Riding.mp4</description>
+         <pubDate>Sun, 25 Aug 2019 09:44:50 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/053%209-%20Method%20Riding.mp4" type="video/mp4" length="18418117"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/055%2011-%20Exercise.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/055%2011-%20Exercise.mp4</link>
+         <title>055 11- Exercise.mp4</title>
+         <description>055 11- Exercise.mp4</description>
+         <pubDate>Sat, 24 Aug 2019 09:44:43 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/055%2011-%20Exercise.mp4" type="video/mp4" length="27295064"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/056%2012-%20Solution.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/056%2012-%20Solution.mp4</link>
+         <title>056 12- Solution.mp4</title>
+         <description>056 12- Solution.mp4</description>
+         <pubDate>Fri, 23 Aug 2019 09:44:49 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/05%20ES6%20Classes/056%2012-%20Solution.mp4" type="video/mp4" length="29533888"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/.DS_Store</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/.DS_Store</link>
+         <title>.DS_Store</title>
+         <description>.DS_Store</description>
+         <pubDate>Thu, 22 Aug 2019 09:44:48 +0000</pubDate>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/057%201-%20Modules.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/057%201-%20Modules.mp4</link>
+         <title>057 1- Modules.mp4</title>
+         <description>057 1- Modules.mp4</description>
+         <pubDate>Wed, 21 Aug 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/057%201-%20Modules.mp4" type="video/mp4" length="19869731"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/058%202-%20CommonJS%20Modules.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/058%202-%20CommonJS%20Modules.mp4</link>
+         <title>058 2- CommonJS Modules.mp4</title>
+         <description>058 2- CommonJS Modules.mp4</description>
+         <pubDate>Tue, 20 Aug 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/058%202-%20CommonJS%20Modules.mp4" type="video/mp4" length="44321581"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/059%203-%20ES6%20Modules.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/059%203-%20ES6%20Modules.mp4</link>
+         <title>059 3- ES6 Modules.mp4</title>
+         <description>059 3- ES6 Modules.mp4</description>
+         <pubDate>Mon, 19 Aug 2019 09:44:47 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/059%203-%20ES6%20Modules.mp4" type="video/mp4" length="23034834"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/060%204-%20ES6%20Tooling.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/060%204-%20ES6%20Tooling.mp4</link>
+         <title>060 4- ES6 Tooling.mp4</title>
+         <description>060 4- ES6 Tooling.mp4</description>
+         <pubDate>Sun, 18 Aug 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/060%204-%20ES6%20Tooling.mp4" type="video/mp4" length="4818625"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/061%205-%20Babel.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/061%205-%20Babel.mp4</link>
+         <title>061 5- Babel.mp4</title>
+         <description>061 5- Babel.mp4</description>
+         <pubDate>Sat, 17 Aug 2019 09:44:52 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/061%205-%20Babel.mp4" type="video/mp4" length="38255431"/>
+      </item>
+      <item>
+         <guid>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/062%206-%20Webpack.mp4</guid>
+         <link>https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/062%206-%20Webpack.mp4</link>
+         <title>062 6- Webpack.mp4</title>
+         <description>062 6- Webpack.mp4</description>
+         <pubDate>Fri, 16 Aug 2019 09:44:48 +0000</pubDate>
+         <enclosure url="https://sketch-2-0-1.sourceforge.io/media/06%20ES6%20Modules/062%206-%20Webpack.mp4" type="video/mp4" length="72574636"/>
+      </item>
+   </channel>
+</rss>

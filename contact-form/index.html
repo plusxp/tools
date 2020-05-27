@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+A Nice & Minimal Contact Form (Downloadable)
+<div id="formBlock">
+  <form id="someForm">
+  <input type="email" id="email" name="Email" placeholder="Your email" required>
+  <input type="text" id="message" maxlength="140" name="Message" placeholder="Short Message" required>
+  <input id="submitBtnLink" class="submit" type="submit" value="Send" disabled>
+  <br />
+  <div id="captcha-link"></div>
+  </form>
+</div>
+
+<div id="loader" style="display:none">
+  <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+  <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+    <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 25 25"
+      to="360 25 25"
+      dur="0.6s"
+      repeatCount="indefinite"/>
+    </path>
+  </svg>
+</div>
+
+<br>
+
+<div id="thankyouBlock" style="display:none">
+  <p>Thank you for filling out the form. I care a lot about it.</p>
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//rawgit.com/arnelh/Contact-Form/master/formspree.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
+
+
+</body>
+</html>  

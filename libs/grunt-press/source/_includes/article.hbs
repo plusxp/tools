@@ -1,0 +1,29 @@
+{{#unless page.no_header}}
+  <header>
+    {{#if index}}
+      <h1 class="entry-title"><a href="{{ root_url }}{{{ post.url }}}">{{#if site.titlecase}}{{titlecase post.title}}{{else}}{{{ post.title }}}{{/if}}</a></h1>
+    {{else}}
+      <h1 class="entry-title">{{#if site.titlecase}}{{titlecase page.title}}{{else}}{{{ page.title }}}{{/if}}</h1>
+    {{/if}}
+    {{#unless (is page.meta false)}}
+      <p class="meta">
+        {{> 'post/date.hbs'}}{{ time }}
+        {{#if (and site.disqus_short_name (isnt page.comments false) (isnt post.comments false) (is site.disqus_show_comment_count true))}}
+           | <a href="{{#if index}}{{ root_url }}{{{ post.url }}}{{/if}}#disqus_thread"
+             data-disqus-identifier="{{#if post.meta.disqus_id}}{{{ post.meta.disqus_id }}}{{else}}{{{ site.url }}}{{{ post.url }}}{{/if}}">Comments</a>
+        {{/if}}
+      </p>
+    {{/unless}}
+  </header>
+{{/unless}}
+{{#if index}}
+  <div class="entry-content">{{excerpt content}}</div>
+  {{!-- #capture 'excerpted'}}{{has_excerpt content}}{{/capture --}}
+  {{#if (is excerpted 'true')}}
+    <footer>
+      <a rel="full-article" href="{{ root_url }}{{{ post.url }}}">{{{ site.excerpt_link }}}</a>
+    </footer>
+  {{/if}}
+{{else}}
+<div class="entry-content">{% body %}</div>
+{{/if}}
