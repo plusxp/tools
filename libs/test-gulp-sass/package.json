@@ -1,0 +1,21 @@
+{
+  "name": "web-less",
+  "version": "1.0.0",
+  "description": "web less browser-sync",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arnel/repository.git"
+  },
+  "author": "arnel",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.12",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.3.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "CKEditor",
+  "main": "index.html",  
+  "window": {
+    "icon": "app.ico",
+	"width" 	: 700,
+	"height"	: 500,
+	"toolbar"	: false
+  }
+}

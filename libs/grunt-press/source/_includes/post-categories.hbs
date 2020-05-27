@@ -1,0 +1,10 @@
+{{!-- #capture 'category'}}{{#if post}}{{size (category_links post.categories)}}{{else}}{{size (category_links page.categories)}}{{/if}}{{/capture --}}
+{{#unless (is category '0')}}
+<span class="categories">
+  {{#if post}}
+    {{category_links post.categories}}
+  {{else}}
+    {{category_links page.categories}}
+  {{/if}}
+</span>
+{{/unless}}

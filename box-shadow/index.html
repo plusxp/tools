@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Box Shadow CSS Generator</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,900,900italic|Source+Code+Pro|Courgette' rel='stylesheet' type='text/css'>
+      <link rel='stylesheet' type='text/css' href='css/jquery.ui.css?v=58b36494'>
+      <link rel='stylesheet' type='text/css' href='css/colorpicker/colorpicker.css?v=1fb0f6b9'>
+      <link rel='stylesheet' type='text/css' href='css/colorpicker/layout.css?v=c4dbba15'>
+      <link rel='stylesheet' type='text/css' href='css/all.css?v=968b0642'>
+      <link rel='stylesheet' type='text/css' href='css/gradients.css?v=58f915c1'>
+    
+    
+    
+      <script src='js/jquery-1.8.3.min.js?v=06e87230'></script>
+      <script src='js/jquery-ui-1.9.1.min.js?v=02ed5fe2'></script>
+      <script src='js/colorpicker/js/colorpicker.js?v=f6a77c16'></script>
+      <script src='js/colorpicker/js/eye.js?v=f23790e3'></script>
+      <script src='js/colorpicker/js/layout.js?v=cda7f9d1'></script>
+      <script src='js/colorpicker/js/utils.js?v=ecdd32d3'></script>
+      <script src='js/jquery.cookie.js?v=24c314da'></script>
+      <script src='js/copyText.js?v=ecabd6b3'></script>
+      <script src='js/jquery.main.js?v=2e64324c'></script>
+      <script src='js/colorFunctions.js?v=5fd8b6e3'></script>
+      <script src='js/jquery.zclip.min.js?v=ed68e770'></script>
+      <script src='https://d3nslu0hdya83q.cloudfront.net/dist/1.0/raven.min.js'></script>
+      <script type="text/javascript">
+        Raven.config().install();
+      </script>
+    
+    <script src='js/boxShadow.js?v=639857a4'></script>
+
+</head>
+<body>
+
+
+  <div id="wrapper" class="shadow">
+    
+      <div class="clearfix headerdetail">
+        <a class="logo" href="/"><img src="img/cssmatic-logo.svg" height="65" onerror="this.onerror=null; this.src='/img/cssmatic-logo-detail.png'"></a>
+        <p class="textop">The ultimate <strong>CSS tools</strong> for web designers</p>
+
+      </div>
+    
+
+
+    
+<div class="twocolumns">
+    <div class="left-column">
+        <div class="box">
+            <div class="holder">
+                <div class="frame">
+                    <div class="setting-block">
+                        <div class="row">
+                            <label for="horizontal-length">Horizontal Length</label>
+                            <label class="align-right" for="horizontal-length">px</label>
+                            <div class="text-1">
+                                <input id="horizontal-length" type="text" value="10" />
+                            </div>
+                        </div>
+                        <div id="slider-horizontal-bs" class="slider-bar large"></div>
+
+                        <div class="row mtop15">
+                            <label for="vertical-length">Vertical Length</label>
+                            <label class="align-right" for="vertical-length">px</label>
+                            <div class="text-1">
+                                <input id="vertical-length" type="text" value="10" />
+                            </div>
+                        </div>
+                        <div id="slider-vertical-bs" class="slider-bar large"></div>
+                    </div>
+
+                    <div class="setting-block">
+                        <div class="row">
+                            <label for="blur-radius">Blur Radius</label>
+                            <label class="align-right" for="blur-radius">px</label>
+                            <div class="text-1">
+                                <input id="blur-radius" type="text" value="5" />
+                            </div>
+                        </div>
+                        <div id="slider-blur-bs" class="slider-bar large"></div>
+
+                        <div class="row mtop15">
+                            <label for="spread-field">Spread Radius</label>
+                            <label class="align-right" for="spread-field">px</label>
+                            <div class="text-1">
+                                <input id="spread-field" type="text" value="0" />
+                            </div>
+                        </div>
+                        <div id="slider-spread-field" class="row-s slider-bar large"></div>
+                    </div>
+
+                    <div class="setting-block">
+                        <div class="row color-row">
+                            <label for="shadow-color">Shadow Color</label>
+                            <div class="text-2">
+                                <input id="shadow-color" type="text" value="#000000" />
+                            </div>
+                            <a id="shadow-color-button" class="btn-color color-3" href="javascript:;">
+                                <span>color</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setting-block">
+                        <div class="row color-row">
+                            <label for="background-color">Background Color</label>
+                            <div class="text-2">
+                                <input id="background-color" type="text" value="#ffffff" />
+                            </div>
+                            <a id="background-color-button" class="btn-color color-5" href="javascript:;">
+                                <span>color</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setting-block">
+                        <div class="row color-row">
+                            <label for="box-color">Box Color</label>
+                            <div class="text-2">
+                                <input id="box-color" type="text" value="#e7a61a" />
+                            </div>
+                            <a id="box-color-button" class="btn-color color-4" href="javascript:;">
+                                <span>color</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setting-block">
+                        <div class="row">
+                            <label for="shadow-opacity">Opacity</label>
+                            <div class="text-1">
+                                <input id="shadow-opacity" type="text" value="0.75" />
+                            </div>
+                        </div>
+                        <div id="slider-opacity-bs" class="slider-bar large"></div>
+                    </div>
+
+                    <div class="setting-block">
+                        <div class="option-panel">
+                            <span>Outline</span>
+                            <span>Inset</span>
+                            <div id="inset-button" class="slider-block">
+                                <span id="inset-no" class="dot"></span>
+                                <div  class="slider-small"><a class="knob left-pos" href="javascript:;">knob</a></div>
+                                <span id="inset-ok" class="dot selected"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="box-shadow-wrapper" class="right-column">
+        <div class="box-wrap">
+            <div id="box-shadow-code" class="content"></div>
+
+            <div id="box-shadow-panel">
+                <div id="box-shadow-object">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+  </div>
+  <div id="opacity-gradient" class="slider-bar large" style="display: none;"></div>
+
+
+</body>
+</html>

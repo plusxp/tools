@@ -1,0 +1,17 @@
+---
+layout: page
+footer: false
+---
+
+<div id="blog-archives" class="category">
+{{#each (get site.categories page.category) as |post|}}
+{{!-- #capture 'this_year'}}{{date post.date '%Y'}}{{/capture --}}
+{{#unless (is year this_year)}}
+  {{assign 'year' this_year}}
+  <h2>{{ year }}</h2>
+{{/unless}}
+<article>
+  {{> archive_post }}
+</article>
+{{/each}}
+</div>

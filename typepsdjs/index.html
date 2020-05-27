@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script type="text/javascript" src="https://rawgit.com/arnelh/type-psd.js/master/dist/psd.min.js"></script>
+
+  <div id="dropzone">
+    <p class="normal">Drop here your PSD file<br/>and get the fonts</p>
+    <p class="dropping">DROP IT!!!</p>
+    <p class="dropped">Processing PSD file<br/>Please wait...</p>
+  </div>
+
+  <div id="image"></div>
+  <div id="data"></div>
+
+  <script type="text/javascript">
+  (function () {
+    var PSD = require('psd');
+
+    document.getElementById('dropzone').addEventListener('dragover', onDragOver, true);
+    document.getElementById('dropzone').addEventListener('drop', onDrop, true);
+
+    function onDragOver(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'copy';
+
+      document.getElementById('dropzone').className = 'dragover';
+    }
+
+    function onDrop(e) {
+      e.stopPropagation();
+      e.preventDefault();
+
+      document.getElementById('dropzone').className = 'processing';
+
+      PSD.fromEvent(e).then(function (psd) {
+        var data = psd.tree().export();
+        var textNodes = [];
+
+        getTextNodes(data, textNodes);
+        var result = '';
+
+        if(textNodes.length == 0)
+          result = 'No text node has been found';
+        else{
+          result = '<table><thead><tr><th>Text</th><th>Font</th><th>Size</th><th>Color</th></tr></thead><tbody>';
+          for(var i in textNodes){
+            result += '<tr>';
+
+            if(textNodes[i].value != null && textNodes[i].value != undefined)
+              result += '<td>' + textNodes[i].value + '</td>';
+            else
+              result += '<td> - </td>';
+
+            if(textNodes[i].font == null || textNodes[i].font == undefined)
+              result += '<td colspan="3">No font information</td>';
+            else {
+              if(textNodes[i].font.name != null && textNodes[i].font.name != undefined)
+              result += '<td>' + textNodes[i].font.name + '</td>';
+              else
+                result += '<td> - </td>';
+        result += '<td>';
+        var last = null;
+              if(textNodes[i].font.sizes != null && textNodes[i].font.sizes != undefined && textNodes[i].font.sizes[0] != null && textNodes[i].font.sizes[0] != undefined){
+          for(var j in textNodes[i].font.sizes)
+            if(textNodes[i].font.sizes[j] != last){
+              result += (last == null ? '' : ', ') + textNodes[i].font.sizes[j] + 'px';
+              last = textNodes[i].font.sizes[j];
+            }
+        }
+              else
+                result += ' - ';
+        result += '</td><td>';
+        last = null;
+              if(textNodes[i].font.colors != null && textNodes[i].font.colors != undefined && textNodes[i].font.colors[0] != null && textNodes[i].font.colors[0] != undefined){
+          for(var j in textNodes[i].font.sizes)
+            if(textNodes[i].font.colors[j].join() != last){
+              result += (last == null ? '' : ', ') + 'rgba(' + textNodes[i].font.colors[j].join() + ')';
+              last = textNodes[i].font.colors[j].join();
+            }
+        }
+              else
+                result += ' - ';
+        result += '</td>';
+            }
+
+            result += '</tr>';
+          }
+          result += '</tbody></table>';
+        }
+
+        document.getElementById('data').innerHTML = result;
+        try{
+          document.getElementById('image').innerHTML = '';
+          document.getElementById('image').appendChild(psd.image.toPng());
+      document.getElementById('image').childNodes[0].removeAttribute('height');
+      document.getElementById('image').childNodes[0].removeAttribute('width');
+        }catch(err){
+          document.getElementById('image').innerHTML = 'There was an error converting the PSD in a PNG image';
+        }
+
+
+        document.getElementById('dropzone').className = '';
+      });
+    }
+  }());
+
+  var arrayConstructor = [].constructor;
+  var objectConstructor = {}.constructor;
+  function getTextNodes(data, result){
+    for(var i in data){
+      if(data[i] == undefined || data[i] == null) continue;
+      if(i == 'text')
+        result.push(data[i]);
+      
+      if(data[i].constructor === objectConstructor || data[i].constructor === arrayConstructor)
+        getTextNodes(data[i], result);
+    }
+  }
+  </script>
+
+
+</body>
+</html>  

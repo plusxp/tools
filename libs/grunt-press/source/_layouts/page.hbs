@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div>
+<article role="article">
+  {{#if page.title}}
+  <header>
+    <h1 class="entry-title">{{#if site.titlecase}}{{titlecase page.title}}{{else}}{{{ page.title }}}{{/if}}</h1>
+    {{#if page.date}}<p class="meta">{{> 'post/date.hbs'}}{{ time }}</p>{{/if}}
+  </header>
+  {{/if}}
+  {% body %}
+  {{#unless (is page.footer false)}}
+    <footer>
+      {{#if (or page.date page.author)}}<p class="meta">
+        {{#if page.author}}{{> 'post/author.hbs'}}{{/if}}
+        {{> 'post/date.hbs'}}{{#if updated}}{{ updated }}{{else}}{{ time }}{{/if}}
+        {{#if page.categories}}{{> 'post/categories.hbs'}}{{/if}}
+      </p>{{/if}}
+      {{#unless (is page.sharing false)}}
+        {{> 'post/sharing.hbs'}}
+      {{/unless}}
+    </footer>
+  {{/unless}}
+</article>
+{{#if (and site.disqus_short_name (is page.comments true))}}
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{{> 'post/disqus_thread.hbs'}}</div>
+  </section>
+{{/if}}
+</div>
+{{#unless (is page.sidebar false)}}
+<aside class="sidebar">
+  {{#if site.page_asides.size}}
+    {{>_array page_asides}}
+  {{else}}
+    {{>_array default_asides}}
+  {{/if}}
+</aside>
+{{/unless}}

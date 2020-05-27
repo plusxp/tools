@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simplest RSS Reader - connectica</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css?v=131207" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="connectica.html" class="active">rss reader</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="versions.txt">history</a></li>
+        </ul>
+    </nav>
+
+    <h1>Simplest RSS reader ever <small><a href="#" id="new-feed">add a new feed</a></small></h1>
+
+    <div id="add-new-feed">
+        <p>
+            <label for="feed-name">Feed Name</label><br />
+            <input name="feed-name" type="text" placeholder="Feed Name" />
+        </p>
+        <p>
+            <label for="feed-url">Feed Url</label><br />
+            <input name="feed-url" type="text" placeholder="Feed Url" />
+        </p>
+        <p>
+            <button id="add-feed">Add this feed</button> or
+            <a href="#" id="hide-feed-form">cancel</a>
+        </p>
+    </div>
+
+    <div id="container">
+        <div id="feeds">
+            <div id="feed-list"></div>
+        </div>
+        <div id="rss-data">
+            <div id="blogs"></div>
+        </div>
+    </div>
+
+    <a href="https://github.com/dstpierre/connectica"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

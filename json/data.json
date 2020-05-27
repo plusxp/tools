@@ -1,0 +1,322 @@
+[
+  {
+    "order_id": 1,
+    "conference": "tv",
+    "session_id": "",
+    "title": "italia1",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 2,
+    "conference": "tv",
+    "session_id": "",
+    "title": "Canale5",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 3,
+    "conference": "tv",
+    "session_id": "",
+    "title": "Rete4",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 4,
+    "conference": "tv",
+    "session_id": "",
+    "title": "20mediaset",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 5,
+    "conference": "tv",
+    "session_id": "",
+    "title": "italia2",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i2)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 6,
+    "conference": "tv",
+    "session_id": "",
+    "title": "cine34",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 7,
+    "conference": "tv",
+    "session_id": "",
+    "title": "mediasetextra",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 8,
+    "conference": "tv",
+    "session_id": "",
+    "title": "focus",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(fu)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 9,
+    "conference": "tv",
+    "session_id": "",
+    "title": "topcrime",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lt)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 10,
+    "conference": "tv",
+    "session_id": "",
+    "title": "iris",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 11,
+    "conference": "tv",
+    "session_id": "",
+    "title": "TGCOM24",
+    "description": "",
+    "video_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kf)/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 12,
+    "conference": "tv",
+    "session_id": "",
+    "title": "DMAX",
+    "description": "",
+    "video_url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_5@825063/master.m3u8?hdnts=st=1583957001~exp=1584043401~acl=/i/*~hmac=4b23674e109898ab08cc7d30c409e72bf14f2164681eba93869c11a65d144796&mux_audio=true",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 13,
+    "conference": "tv",
+    "session_id": "",
+    "title": "MOTORTREND",
+    "description": "",
+    "video_url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_1@810993/master.m3u8?hdnts=st=1583957164~exp=1584043564~acl=/i/*~hmac=1e353be7417c95a775f53b60bbfce7da92317c917c0c6d42e36a7ad282adef96&mux_audio=true",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 21,
+    "conference": "world",
+    "session_id": "",
+    "title": "CBC",
+    "description": "",
+    "video_url": "https://cbcnewshd-f.akamaihd.net/i/cbcnews_30@304030/index_2500_av-b.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 22,
+    "conference": "world",
+    "session_id": "",
+    "title": "NHK",
+    "description": "",
+    "video_url": "https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_1M.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 23,
+    "conference": "world",
+    "session_id": "",
+    "title": "TRT",
+    "description": "",
+    "video_url": "https://tv-trtworld.live.trt.com.tr/master_1080.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 24,
+    "conference": "world",
+    "session_id": "",
+    "title": "RT",
+    "description": "",
+    "video_url": "https://rt-news.secure.footprint.net/1103.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 25,
+    "conference": "world",
+    "session_id": "",
+    "title": "CNA",
+    "description": "",
+    "video_url": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 26,
+    "conference": "world",
+    "session_id": "",
+    "title": "AJZ",
+    "description": "",
+    "video_url": "https://live-hls-web-aje.getaj.net/AJE/01.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 27,
+    "conference": "world",
+    "session_id": "",
+    "title": "SKY24",
+    "description": "",
+    "video_url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1588619503/ei/jhSwXtXKO9yh1gLF2LioAQ/ip/79.55.14.120/id/9Auq9mYxFEE.1/itag/95/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/160/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D136/hls_chunk_host/r3---sn-uxaxpu5ap5-8jxe.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/7440/mh/Yv/mm/44/mn/sn-uxaxpu5ap5-8jxe/ms/lva/mv/m/mvi/2/pcm2cms/yes/pl/24/dover/11/keepalive/yes/fexp/23882514/mt/1588597824/disable_polymer/true/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AOq0QJ8wRQIgW6_qOEucAIJ4IcZ8Sip1fUmgWtPTJQ4J1oOm6PkjmpMCIQCELHGoNwj5xJtBCke1w46s1OamtgyPRAapUtz8mk_8JA%3D%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pcm2cms,pl/lsig/AG3C_xAwRQIhANhKMKkn5cGRigH5_LmJnXtYAKO272kL0Sf5sVKxrVVoAiBKKaDhXt7ymDSaW5jaUzOiqRieJXzyn5Rta8ybb_P1TQ%3D%3D/playlist/index.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 28,
+    "conference": "world",
+    "session_id": "",
+    "title": "DW",
+    "description": "",
+    "video_url": "https://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/index_5_a-b.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 29,
+    "conference": "world",
+    "session_id": "",
+    "title": "FR24",
+    "description": "",
+    "video_url": "http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 30,
+    "conference": "world",
+    "session_id": "",
+    "title": "CGTN",
+    "description": "",
+    "video_url": "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 31,
+    "conference": "world",
+    "session_id": "",
+    "title": "INDIA",
+    "description": "",
+    "video_url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 101,
+    "conference": "radio",
+    "session_id": "",
+    "title": "celticmusic",
+    "description": "",
+    "video_url": "http://stream.celticmusicradio.net:8000/celticmusic.mp3",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 102,
+    "conference": "radio",
+    "session_id": "",
+    "title": "bbc radio one",
+    "description": "",
+    "video_url": "http://open.live.bbc.co.uk/mediaselector/5/select/mediaset/http-icy-mp3-a/vpid/bbc_radio_one/format/pls.pls",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 103,
+    "conference": "radio",
+    "session_id": "",
+    "title": "bbc 1xtra",
+    "description": "",
+    "video_url": "http://open.live.bbc.co.uk/mediaselector/5/select/mediaset/http-icy-mp3-a/vpid/bbc_1xtra/format/pls.pls",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 104,
+    "conference": "radio",
+    "session_id": "",
+    "title": "bbc radio two",
+    "description": "",
+    "video_url": "http://open.live.bbc.co.uk/mediaselector/5/select/mediaset/http-icy-mp3-a/vpid/bbc_radio_two/format/pls.pls",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 105,
+    "conference": "radio",
+    "session_id": "",
+    "title": "john reed mp3 hq",
+    "description": "",
+    "video_url": "http://fluxfm.hoerradar.de/john-reed-mp3-hq",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 106,
+    "conference": "radio",
+    "session_id": "",
+    "title": "rai 3",
+    "description": "",
+    "video_url": "http://icestreaming.rai.it/3.mp3",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 107,
+    "conference": "radio",
+    "session_id": "",
+    "title": "stream",
+    "description": "",
+    "video_url": "http://206.190.135.28:8776/stream",
+    "platform": "TV",
+    "speaker": "HQ"
+  },
+  {
+    "order_id": 108,
+    "conference": "radio",
+    "session_id": "",
+    "title": "bbc radio three",
+    "description": "",
+    "video_url": "http://open.live.bbc.co.uk/mediaselector/5/select/mediaset/http-icy-mp3-a/vpid/bbc_radio_three/format/pls.pls",
+    "platform": "TV",
+    "speaker": "HQ"
+  }
+]

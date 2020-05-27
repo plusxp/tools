@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+  nav {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    overflow: scroll;
+  }
+  aside {
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+    overflow: scroll;
+  }
+  article {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  body {
+    font-family: "helvetica neue";
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    grid-template-areas: 
+    "navigation"
+    "sidebar"
+    "article";
+  }
+
+  .linkItem:focus {
+      background-color: #FFFF66;
+      box-shadow: inset 0px 0px 0px 1px #F47E58;
+      outline: none;
+  }
+
+  .linkItem {
+    padding: 20px;
+    box-shadow: inset 0px 0px 0px 1px silver;
+  }
+
+  .linkItem span {
+    cursor: pointer;
+  }
+
+  .article-wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+</style>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  var proxy = "https://ar-cors.herokuapp.com/";
+  // var feedUrl = "https://res.cloudinary.com/devfred/raw/upload/v1581842522/XML/cd_catalog.xml";
+  // var feedUrl = "https://css-tricks.com/feed/";
+  var feedUrl = "http://9gagrss.com/feed/index.xml";
+  var requestUrl = proxy + feedUrl;
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", requestUrl, true);
+  xhttp.send();
+  xhttp.addEventListener("loadend", function_name, false);
+};
+
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="";
+  var x = xmlDoc.getElementsByTagName("item");
+  for (i = 0; i <x.length; i++) { 
+    table += "<div class='linkItem sideBarLink' tabindex='0'><span>" +
+    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+    "<div class='contentStuff' style='display:none'>" + x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue + "</div>" +
+    "</span></div>";
+  };
+  document.getElementById("sidebarContent").innerHTML = table;
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  var items = document.getElementsByClassName('navigationLink');
+  for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener('click', loadDoc);
+  };
+  function_name();
+});
+
+function function_name(argument) {
+  var itemsa = document.getElementsByClassName('sideBarLink');
+  for (var i = 0; i < itemsa.length; i++) {
+    itemsa[i].addEventListener('click', function (){
+      // document.getElementById("articleContent").innerHTML = this.dataset.artist;
+      document.getElementById("articleContent").innerHTML = this.querySelector('.contentStuff').innerHTML;
+    });
+  };
+}
+
+</script>
+  <body>
+    <nav class="navigation">
+      <div class="linkItem navigationLink" tabindex="1"><span>consectetur adipisicing</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>sunt! Non soluta</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>laudantium libero</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>Lorem ipsum dolor</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>Repellat quae</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>voluptatibus</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>minima recusandae</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>autem sapiente</span></div>
+      <div class="linkItem navigationLink" tabindex="1"><span>accusantium exce</span></div>
+    </nav>
+
+    <aside class="sidebar" id="sidebarContent">
+      <div class="linkItem sideBarLink" tabindex="0"><span>consectetur adipisicing</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>sunt! Non soluta</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>laudantium libero</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>Lorem ipsum dolor</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>Repellat quae</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>voluptatibus</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>minima recusandae</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>autem sapiente</span></div>
+      <div class="linkItem sideBarLink" tabindex="0"><span>accusantium exce</span></div>
+    </aside>
+
+    <article role="article">
+      <div class="article-wrapper">
+        <span id="articleContent">lorem</span>
+      </div>
+    </article>
+  </body>
+</html>

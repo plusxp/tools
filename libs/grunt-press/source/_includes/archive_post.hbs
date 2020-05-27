@@ -1,0 +1,8 @@
+{{!-- #capture 'category'}}{{size post.categories}}{{/capture --}}
+<h1><a href="{{ root_url }}{{{ post.url }}}">{{#if site.titlecase}}{{titlecase post.title}}{{else}}{{{ post.title }}}{{/if}}</a></h1>
+<time datetime="{{date_to_xmlschema (datetime post.date)}}" pubdate>{{date post.date '<span class="month">%b</span> <span class="day">%d</span> <span class="year">%Y</span>'}}</time>
+{{#if (isnt category '0')}}
+<footer>
+  <span class="categories">posted in {{category_links post.categories}}</span>
+</footer>
+{{/if}}
