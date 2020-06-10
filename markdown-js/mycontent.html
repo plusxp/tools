@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>My Markdown Content</title>
+
+<meta name="viewport" content="width=device-width" >
+<link rel="stylesheet" href="css/main.css" charset="utf-8">
+
+<style>
+#status {
+    font-style: italic;
+}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script src="scripts/vendor.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/main.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Obtain Markdown.Converter.js from http://code.google.com/p/pagedown/ -->
+<script src="scripts/Markdown.Converter.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#status").html("<p>Loading page content...</p>");
+
+        // Load the Markdown file and convert it to HTML for display
+        var markdownURL = "sample.txt";
+        $.get(markdownURL, function(markdownContent) {
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(markdownContent);
+            $("div#content").html(htmlContent);
+        });
+    });
+</script>
+
+</head>
+
+<body>
+
+<div id="content">
+    <div id="status">
+        <p>JavaScript must be enabled in your browser to view this page.</p>
+    </div>
+</div>
+
+</body>
+</html>
