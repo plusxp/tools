@@ -37,7 +37,7 @@ const render = () => {
     itemList.innerHTML += `
         <tr class="item">
           <th scope="row">
-            <button id="id${item.id}" type="button" class="btn btn-outline-primary rdo" data-url="${item.item_link}">
+            <button id="id${item.id}" type="button" class="btn btn-outline-primary rdo" data-url="https://ar-cors.herokuapp.com/${item.item_link}">
               <i class="fa fa-play" aria-hidden="true"></i>
             </button>
           </th>
