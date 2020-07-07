@@ -11,7 +11,8 @@ $('#pause').on('click', function() {
 });
 
 $('.rdo').on('click', function() {
-    $('#mediaPlayer').attr('src', $(this).data('url')).trigger('play');
+    $('#mediaPlayer source').attr('src', $(this).data('url'));
+    $('#mediaPlayer').trigger('play');
     $('.nav-list button.active').removeClass('active');
     $(this).addClass('active');
     $('body').removeClass('pause');
