@@ -1,4 +1,4 @@
-const CACHE_NAME = "app-cache-v2";
+const CACHE_NAME = "tools/rdo";
 
 const assets = [
   "/",
