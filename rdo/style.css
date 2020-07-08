@@ -1,4 +1,13 @@
 .app-wrapper {
-  max-width: 600px;
-  margin: 0 auto;
+	max-width: 600px;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+.card-body {
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: auto;
 }
