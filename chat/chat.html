@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Chat Widget</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container clearfix">    
+    <div class="chat">
+      
+      <div class="chat-history">
+        <ul>
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >BARNARDO</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              Who’s there?
+            </div>
+          </li>
+          
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> FRANCISCO</span>
+              <span class="message-data-time">10:12 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              Nay, answer me. Stand and unfold yourself.
+            </div>
+          </li>
+          
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >BARNARDO</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              Long live the King!
+            </div>
+          </li>
+          
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> FRANCISCO</span>
+              <span class="message-data-time">10:20 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              Barnardo?
+            </div>
+          </li>
+
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >BARNARDO</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              He.
+            </div>
+          </li>
+
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> FRANCISCO</span>
+              <span class="message-data-time">10:20 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              You come most carefully upon your hour.
+            </div>
+          </li>
+
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >BARNARDO</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              ’Tis now struck twelve. Get thee to bed, Francisco.
+            </div>
+          </li>
+
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> FRANCISCO</span>
+              <span class="message-data-time">10:20 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              For this relief much thanks. ’Tis bitter cold,
+              <br>And I am sick at heart.
+            </div>
+          </li>
+
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >BARNARDO</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              Have you had quiet guard?
+            </div>
+          </li>
+
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> FRANCISCO</span>
+              <span class="message-data-time">10:20 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              Not a mouse stirring.
+            </div>
+          </li>
+
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >BARNARDO</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              Well, good night.
+              <br>If you do meet Horatio and Marcellus,
+              <br>The rivals of my watch, bid them make haste.
+            </div>
+          </li>
+          
+        </ul>
+        
+      </div> <!-- end chat-history -->
+      
+      
+    </div> <!-- end chat -->
+    
+  </div> <!-- end container -->
+
+<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+    <div class="message-data align-right">
+      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+      <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+      {{messageOutput}}
+    </div>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <div class="message-data">
+      <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+      <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+      {{response}}
+    </div>
+  </li>
+</script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
