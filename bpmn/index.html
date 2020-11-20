@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BPMN Sketch Miner</title>
+        <meta name="description" content="">
+        <meta name="version" content="1.17.1.3215">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body data-src="tutorial/11/04-challenge-five">
+        <header>
+            <section>
+                <h1>BPMN Sketch Miner</h1>
+                <!-- <nav>
+                    <a href="../index.html">Sketch</a>
+                    <a href="../tutorial/index.html">Tutorial</a>
+                    <a class="link-example-prev active" href="syntax-0-02-loops.html">&#8678;</a>
+                    <a class="active" href="../examples/index.html">Examples</a>
+                    <a class="link-example-next active" href="syntax-0-04-events-start-end.html">&#8680;</a>
+                    <a href="../doc/index.html">Help</a>
+                    <a href="../feedback/index.html">Feedback</a>
+                </nav> -->
+                <div style="flex:1"></div>
+            </section>
+            <section>
+                <h2>Syntax Reference - Conditions</h2>
+                <nav>
+                    <span id="button-option-layout">
+                        Layout: <a id="button-option-layout-orientation-vertical" href="#" title="Vertical">↓</a>
+                        <a id="button-option-layout-orientation-horizontal" href="#" title="Horizontal">→</a>
+                    </span>
+                    <span id="button-option-layout">
+                        Zoom: <a id="button-option-layout-zoom-none" href="#" title="1:1">1:1</a>
+                        <a id="button-option-layout-zoom-fit" href="#" title="Fit">Fit</a>
+                    </span>
+                    <span id="button-share">
+                        Share: <a id="button-share-url" href="#">Link</a>
+                    </span>
+                    <span id="button-export">
+                        Export: <a id="button-export-svg" href="#">SVG</a>
+                        <a id="button-export-png" href="#">PNG</a>
+                        <a id="button-export-bpmn" href="#">BPMN</a>
+                    </span>
+                </nav>
+            </section>
+        </header>
+        <aside class="popup">
+            <section></section>
+            <a class="close" href="#">&times;</a>
+        </aside>
+        <main>
+            <textarea id="logtext" oninput="live(this.value+'\n',true);" placeholder="What&#39;s your process like today?">Branch Without Conditions:
+
+Decision Task
+Step
+
+Decision Task
+Alternative Step
+
+
+Branch With Conditions:
+
+Decision Task?
+Condition
+Next Step
+
+Decision Task?
+Alternative Condition
+</textarea>
+            <div>
+                <svg id="restalk" style=""></svg>
+            </div>
+        </main>
+        <div style="display: none">
+            <footer>
+                <progress id="progress" style="display: none"></progress>
+                <p id="status" style="display: none"></p>
+            </footer>
+            <textarea id="explog"></textarea>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
