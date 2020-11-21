@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Get my CD collection</button>
+<br><br>
+<div id="demo"></div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var myArr = JSON.parse(this.responseText);
+      myFunction(myArr);
+    }
+  };
+  xhttp.open("GET", "https://api.github.com/users/ahelja/gists?page=1&per_page=100", true);
+  xhttp.send();
+}
+
+function myFunction(arr) {
+    console.log('foo', arr);
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' +
+        arr[i].description + '</a><br>';
+    }
+    document.getElementById("demo").innerHTML = out;
+}
+
+// function myFunction(xml) {
+//   var i;
+//   var xmlDoc = xml.responseXML;
+//   console.log('foo', xmlDoc);
+
+  // var table="<tr><th>Artist</th><th>Title</th></tr>";
+  // var x = xmlDoc.getElementsByTagName("item");
+  // for (i = 0; i <x.length; i++) { 
+  //   if (x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue == "video") {
+  //     table += "<tr><td>" +
+  //     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+  //     "</td><td>" +
+  //     x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+  //     "</td></tr>";
+  //   }
+  // }
+  
+  // var demoLorem = table.replace("muted", "").replace("loop", "").split("autoplay").join("ciao");
+  // document.getElementById("demo").innerHTML = demoLorem;
+//}
+</script>
+
+</body>
+</html>
