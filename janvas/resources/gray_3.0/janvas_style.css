@@ -1,0 +1,330 @@
+/* ADVERTISING_PREMIUM_PANEL */
+#ADVERTISING_PREMIUM_PANEL {    position:absolute; display:none;   left:50%; top:50%;   width:500px; height:300px;   margin-left:-250px; margin-top:-150px;   background-color:#484848;   background-size: 100% 100%;   -webkit-border-radius:4px;   -moz-border-radius:4px; 	border-radius:4px;     z-index: 10000;   overflow: hidden;   color: #D3CCC2; } 
+#ADVERTISING_PREMIUM_PANEL .logo{position:absolute; display:block; left:0px; top:0px; width:500px; height:300px; background-image:url(graphics/applications/janvas_brand/advertising_premium.svg); background-repeat: no-repeat;}
+#ADVERTISING_PREMIUM_LINK{ position:absolute; display:block; left:300px; top:100px; width:180px; height:180px;   cursor: pointer; }
+#ADVERTISING_PREMIUM_PANEL .info {  	position:absolute; display:block; 	right:26px; top:60px; 	width:160px; 	text-align: center; 	font-size: 10px; 	color:#FFFFFF; 	 	 }
+#ADVERTISING_PREMIUM_PANEL .account_free_status {  	position:absolute; display:block; 	right:25px; top:40px; 	width:160px; 	text-align: center; 	font-size: 14px; 	color:#FFEB00; 	font-weight: bold; 	 }
+
+
+#ABOUT_PANEL .logo{position:absolute; display:block; left:0px; top:0px; width:350px; height:160px; background-image:url(graphics/applications/janvas_brand/janvas_about_panel.png); background-repeat: no-repeat;}
+
+
+.main_tools { left:0px; 	top:0px; 	width:100%;  	 height:38px; }
+.toolbar>li{width:38px; height:38px;  }
+/* .documentBar >li{  background-image:url(graphics/applications/icons/selectionProperties2D_icon.svg);  }  */
+
+
+/* WINDOWS */
+.layers_win{     top:300px; left:200px; width:280px; height:240px; background-color:rgb(58, 58, 58);   }
+.effects_win{     top:300px; left:300px; width:280px; height:240px; background-color:rgb(58, 58, 58);   }
+.animations_win{     top:300px; left:300px; width:280px; height:240px; background-color:rgb(58, 58, 58);   }
+.resources_win{     top:300px; left:100px; width:420px; height:360px; background-color:rgb(58, 58, 58);   }
+.driveFileBrowser_win{     top:300px; left:400px; width:280px; height:440px; background-color:rgb(58, 58, 58);   }
+
+.textBoxEdit_win{   top:300px; left:100px; width:280px; height:240px;    }
+.textBoxEdit_win textarea {position:absolute; resize: none; outline: none;  padding:0;  background-color:rgb(235, 235, 235);  color:black; display:block;  width:100%; top:0; bottom:30px; border:none;}
+
+.includesEdit_win{  top:300px; left:100px; width:280px; height:240px;    }
+.includesEdit_win .content>div {position:absolute; padding:0;   display:block; left:10px; right:10px; top:10px; bottom:30px;   border-width: 1px;    border-color:#514B4B; }
+.includesEdit_win .content>div>div { position:relative; padding:0;  display:block; width:100%; height: 50%;   border-width: 1px;    border-color:#514B4B; }
+.includesEdit_win .content>div>div textarea { position:absolute; resize: none; outline: none;  padding:0;  background-color:rgb(235, 235, 235);  color:black; display:block;  width:100%; top:20px; bottom:0px; }
+
+.titleDescriptionEdit_win{    top:300px; left:100px; width:280px; height:240px;    }
+.titleDescriptionEdit_win .content>div {position:absolute; padding:0;   display:block; left:10px; right:10px; top:10px; bottom:30px;   border-width: 1px;    border-color:#514B4B; }
+.titleDescriptionEdit_win .content>div>div { position:relative; padding:0;  display:block; width:100%; height: 50%;   border-width: 1px;    border-color:#514B4B; }
+.titleDescriptionEdit_win .content>div>div textarea { position:absolute; resize: none; outline: none;  padding:0;  background-color:rgb(235, 235, 235);  color:black; display:block;  width:100%; top:20px; bottom:0px; }
+
+.inlineContentEdit_win{    top:300px; left:100px; width:280px; height:240px;    }
+.inlineContentEdit_win .content {bottom:30px;}
+.inlineContentEdit_win textarea {position:absolute; resize: none; outline: none;  padding:0;  background-color:rgb(235, 235, 235);  color:black; display:block;  width:100%; top:0; bottom:30px; border:none;}
+
+
+/* LAYERS 2D PANEL */
+#LAYERS_2D_PANEL { position: absolute; top:0; bottom:26px; left:0; right:0; padding: 10px;  }					
+#LAYERS_2D_PANEL  .visibleTrue > #visibleState {     background-image:url(graphics/applications/icons/visible_icon.png);   }
+#LAYERS_2D_PANEL  .visibleFalse > #visibleState {    background-image:url(graphics/applications/icons/hidden_icon.png);  }
+#LAYERS_2D_PANEL  .lockedTrue  > #lockedState {   right: 0px; background-image:url(graphics/applications/icons/locked_icon.png);  }
+#LAYERS_2D_PANEL  .lockedFalse  > #lockedState {  right: 0px; background-image:url(graphics/applications/icons/unlocked_icon.png);  }
+
+/* LAYERS EDITING TOOLS */
+#CREATE_LAYER_button>a{background-image:url(graphics/applications/icons/addItem_icon.svg);}
+#REMOVE_LAYER_button>a{background-image:url(graphics/applications/icons/trash_icon.svg);}
+#MOVE_LAYER_UP_button>a{background-image:url(graphics/applications/icons/bring_up_icon.svg);}
+#MOVE_LAYER_DOWN_button>a{background-image:url(graphics/applications/icons/bring_down_icon.svg);}
+#MOVE_SELECTION_IN_LAYER_button>a{background-image:url(graphics/applications/icons/moveSelectionInLayer_icon.png);}
+
+
+/* EFFECTS 2D PANEL */	
+#EFFECTS_2D_PANEL { position: absolute; top:0; bottom:26px; left:0; right:0; padding: 10px;  }
+#EFFECTS_2D_PANEL  .visibleTrue > #visibleState {     background-image:url(graphics/applications/icons/visible_icon.png);   }
+#EFFECTS_2D_PANEL  .visibleFalse > #visibleState {   background-image:url(graphics/applications/icons/hidden_icon.png);  }
+#EFFECTS_2D_PANEL  .lockedTrue  > #lockedState {   right: 0px; background-image:url(graphics/applications/icons/locked_icon.png);  }
+#EFFECTS_2D_PANEL  .lockedFalse  > #lockedState {  right: 0px; background-image:url(graphics/applications/icons/unlocked_icon.png);  }
+#REMOVE_EFFECT_button>a{background-image:url(graphics/applications/icons/trash_icon.svg);}
+#MOVE_EFFECT_UP_button>a{background-image:url(graphics/applications/icons/bring_up_icon.svg);}
+#MOVE_EFFECT_DOWN_button>a{background-image:url(graphics/applications/icons/bring_down_icon.svg);}
+
+
+/* ANIMATIONS 2D PANEL */	
+#ANIMATIONS_2D_PANEL { position: absolute; top:0; bottom:26px; left:0; right:0; padding: 10px;  }
+#ANIMATIONS_2D_PANEL li .icon{ background-image:url(graphics/applications/icons/tweenList_icon.png); background-size: initial;  }
+
+/*
+#ANIMATIONS_2D_PANEL  .visibleTrue > #visibleState {     background-image:url(graphics/applications/icons/visible_icon.png);   }
+#ANIMATIONS_2D_PANEL  .visibleFalse > #visibleState {   background-image:url(graphics/applications/icons/hidden_icon.png);  }
+#ANIMATIONS_2D_PANEL  .lockedTrue  > #lockedState {   right: 0px; background-image:url(graphics/applications/icons/locked_icon.png);  }
+#ANIMATIONS_2D_PANEL  .lockedFalse  > #lockedState {  right: 0px; background-image:url(graphics/applications/icons/unlocked_icon.png);  }
+*/
+#CREATE_ANIMATION_button>a{background-image:url(graphics/applications/icons/addItem_icon.svg);}
+#REMOVE_ANIMATION_button>a{background-image:url(graphics/applications/icons/trash_icon.svg);}
+
+
+
+/* RESOURCES PANELS */
+#FONTS_LIBRARY_PANEL,#GRADIENTS_LIBRARY_PANEL, #PATTERNS_LIBRARY_PANEL,#DRIVE_FILE_BROWSER_PANEL  { position: absolute; top:0; bottom:26px; left:0; right:0;   }
+#FONTS_LIBRARY_PANEL li{ background-image:none ; cursor: pointer; }
+#FONTS_LIBRARY_PANEL li img { width:100%;  float:left; }
+
+#GRADIENTS_LIBRARY_PANEL li , #PATTERNS_LIBRARY_PANEL li { cursor: pointer; background-image:none ; border-radius: 4px 4px 4px 4px ; width: 42px; height: 42px; float: left; margin:0 4px 4px 0; padding: 0; }
+
+#SYMBOLS_LIBRARY_PANEL .header { width:100%; height: 22px; line-height: 22px; padding: 8px; color:white; font-size: 10px;  }
+#SYMBOLS_LIBRARY_PANEL ul { position: absolute; top:40px; bottom:26px; left:0; right:0; color:black;  }
+#SYMBOLS_LIBRARY_PANEL ul li{ cursor:pointer;  background-image:none ; border-radius: 4px 4px 4px 4px ; width: 120px; height: 120px; float: left; margin:0 4px 4px 0; padding: 0; }
+#SYMBOLS_LIBRARY_PANEL ul li a { width:100%;  position:absolute; font-size: 10px; text-align: center; bottom: 0; line-height: 20px; background-color: rgba(255,255,255,.5); }
+#SYMBOLS_LIBRARY_PANEL ul li img { width:100%;  float:left; }
+
+
+#INSPECTOR_PANEL { position: absolute; top:26px; bottom:28px; left:0; right:0; padding: 10px; }
+#INSPECTOR_PANEL > div > .title {  	line-height: 25px;   font-size: 12px;      color:white; }
+
+
+#RESOURCES_WIN_button>a{ background-image:url(graphics/applications/icons/graphicsLibrary_icon.svg); }
+#LAYERS_WIN_button>a{ background-image:url(graphics/applications/icons/layerList_icon.png);  }
+#EFFECTS_WIN_button>a{ background-image:url(graphics/applications/icons/effectList_icon.png);  }
+#ANIMATIONS_WIN_button>a{ background-image:url(graphics/applications/icons/tweenList_icon.png);  }
+#DRIVE_FILE_BROWSER_WIN_button>a {background-image:url(graphics/applications/icons/googleDrive_icon.svg);  }
+
+#GRADIENTS_LIBRARY_button>a{ background-image:url(graphics/applications/icons/gradientsLibrary_icon.svg); }
+#PATTERNS_LIBRARY_button>a{ background-image:url(graphics/applications/icons/patternsLibrary_icon.svg); }
+#SYMBOLS_LIBRARY_button>a{ background-image:url(graphics/applications/icons/graphicsLibrary_icon.svg); }
+#FONTS_LIBRARY_button>a{ background-image:url(graphics/applications/icons/font_icon.svg); }
+
+/* GLOBAL TOOLS */
+	#NEW_menuItem{background-image:url(graphics/applications/icons/addItem_icon.svg);}
+	#SAVE_AS_START_TEMPLATE_menuItem{background-image:url(graphics/applications/icons/saveAsStartTemplate_icon.png);}
+	#RESET_START_TEMPLATE_menuItem{background-image:url(graphics/applications/icons/removeStartTemplate_icon.png);}
+	#GENERATE_IMAGE_PNG_menuItem, #GENERATE_IMAGE_JPG_menuItem,#EXPORT_AS_JPG_menuItem,#EXPORT_AS_PNG_menuItem{background-image:url(graphics/applications/icons/generateImage_icon.png);}
+	#GENERATE_SVG_menuItem{background-image:url(graphics/applications/icons/generateSvg_icon.png);}
+
+#RELOAD_toolButton>a{background-image:url(graphics/applications/icons/reload_icon.svg);}
+
+
+#MAIN_TOOLBAR_2D .logo { width:140px; background-image:url(graphics/applications/janvas_brand/janvas_logo_120x38.svg); background-repeat: no-repeat;}
+
+#SELECT_GLOBAL_2D_toolButton>a{background-image:url(graphics/applications/icons/selectGlobal_icon.svg);}
+#SELECT_LOCAL_2D_toolButton>a{background-image:url(graphics/applications/icons/selectLocal_icon.svg);}
+#PAN_2D_toolButton>a{background-image:url(graphics/applications/icons/pan_icon.svg);}
+#ZOOM_2D_toolButton>a{background-image:url(graphics/applications/icons/zoomInOut_icon.svg);}
+#TEXT_2D_toolButton>a{background-image:url(graphics/applications/icons/text_icon.svg);}
+#BRING_FRONT_toolButton>a{background-image:url(graphics/applications/icons/bring_front_icon.svg);}
+#SEND_BACK_toolButton>a{background-image:url(graphics/applications/icons/bring_back_icon.svg);}
+#TEXT_ALIGN_LEFT>a{ background-image:url(graphics/applications/icons/textAlignLeft_icon.svg);  }
+#TEXT_ALIGN_CENTER>a{ background-image:url(graphics/applications/icons/textAlignCenter_icon.svg);  }
+#TEXT_ALIGN_RIGHT>a{ background-image:url(graphics/applications/icons/textAlignRight_icon.svg); }
+#TEXT_ITALIC>a{ background-image:url(graphics/applications/icons/text_italic_icon.svg); }
+#TEXT_BOLD>a{ background-image:url(graphics/applications/icons/text_bold_icon.svg); }
+
+
+/* TOOLS 2D */
+#PATH_TOOLS_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_curve_icon.svg);} 
+	#PATH_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_curve_icon.svg);}
+	#SPLIT_PATH_2D_toolButton>a{background-image:url(graphics/applications/icons/splitPath_icon.svg);}
+	#ADD_PATH_POINT_2D_toolButton>a{background-image:url(graphics/applications/icons/addPathPoint_icon.svg);}
+	#REMOVE_PATH_POINT_2D_toolButton>a{background-image:url(graphics/applications/icons/removePathPoint_icon.svg);}
+	#CONVERT_PATH_POINT_2D_toolButton>a{background-image:url(graphics/applications/icons/pathCornerToCurve_icon.svg);}
+
+#DRAW_TOOLS_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_rectangle_icon.svg);} 
+	#LINE_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_line_icon.svg);}
+	#RECT_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_rectangle_icon.svg);}
+	#ELLIPSE_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_ellipse_icon.svg);}
+
+#DRAW_FREEHAND_TOOLS_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_freehand_icon.svg);}
+	#FREEHAND_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_freehand_icon.svg);}
+	#BRUSH_2D_toolButton>a{background-image:url(graphics/applications/icons/draw_brush_icon.svg);}
+
+#EDIT_GRAPHIC_ATTRIBUTES_2D_toolButton>a{background-image:url(graphics/applications/icons/eyeDropper_icon.svg);}
+	#EYEDROPPER_2D_toolButton>a{background-image:url(graphics/applications/icons/eyeDropper_icon.svg);}
+	#EDIT_GRADIENT_POINTS_2D_toolButton>a{background-image:url(graphics/applications/icons/editGradientPoints_icon.svg);}
+
+#BRING_UP_toolButton>a{background-image:url(graphics/applications/icons/bring_up_icon.svg);}
+#BRING_DOWN_toolButton>a{background-image:url(graphics/applications/icons/bring_down_icon.svg);}
+
+#ALIGNMENTS_toolButton>a{background-image:url(graphics/applications/icons/align_left_icon.svg);}
+	#ALIGN_LEFT>a{ background-image:url(graphics/applications/icons/align_left_icon.svg); }
+	#ALIGN_VCENTER>a{ background-image:url(graphics/applications/icons/align_vcenter_icon.svg); }
+	#ALIGN_RIGHT>a{ background-image:url(graphics/applications/icons/align_right_icon.svg); }
+	#ALIGN_TOP>a{ background-image:url(graphics/applications/icons/align_top_icon.svg); }
+	#ALIGN_HCENTER>a{ background-image:url(graphics/applications/icons/align_hcenter_icon.svg); }
+	#ALIGN_BOTTOM>a{ background-image:url(graphics/applications/icons/align_bottom_icon.svg); }
+	
+	#DISTRIBUITE_LEFT>a{ background-image:url(graphics/applications/icons/distribuite_left_icon.svg); }
+	#DISTRIBUITE_VCENTER>a{ background-image:url(graphics/applications/icons/distribuite_vcenter_icon.svg); }
+	#DISTRIBUITE_RIGHT>a{ background-image:url(graphics/applications/icons/distribuite_right_icon.svg); }
+	#DISTRIBUITE_TOP>a{ background-image:url(graphics/applications/icons/distribuite_top_icon.svg); }
+	#DISTRIBUITE_HCENTER>a{ background-image:url(graphics/applications/icons/distribuite_hcenter_icon.svg); }
+	#DISTRIBUITE_BOTTOM>a{ background-image:url(graphics/applications/icons/distribuite_bottom_icon.svg); }
+	#DISTRIBUITE_HSPACE>a{ background-image:url(graphics/applications/icons/distribuite_hspace_icon.svg); }
+	#DISTRIBUITE_VSPACE>a{ background-image:url(graphics/applications/icons/distribuite_vspace_icon.svg); }
+	
+
+#EDIT_TRANSFORM_2D_toolButton>a{background-image:url(graphics/applications/icons/rotate_icon.svg);}
+	#ROTATE_2D_toolButton>a{background-image:url(graphics/applications/icons/rotate_icon.svg);}
+	#HOR_REFLECT_toolButton>a{background-image:url(graphics/applications/icons/hor_reflect_icon.svg);}
+	#VER_REFLECT_toolButton>a{background-image:url(graphics/applications/icons/ver_reflect_icon.svg);}
+
+
+ #SELECTION_ACTIONS_2D_toolButton>a{background-image:url(graphics/applications/icons/actionsForSelection_icon.svg);  }
+	#CREATE_COMPOSED_PATH_menuItem{background-image:url(graphics/applications/icons/createComposedPath_icon.png);}
+	#CREATE_MASK_menuItem{background-image:url(graphics/applications/icons/createMask_icon.png);}
+	#GROUP_menuItem{background-image:url(graphics/applications/icons/group_icon.png);}
+	#UNGROUP_menuItem{background-image:url(graphics/applications/icons/ungroup_icon.png);}
+	#DUPLICATE_menuItem{background-image:url(graphics/applications/icons/duplicate_icon.png);} 
+	#SELECT_ALL_menuItem{background-image:url(graphics/applications/icons/selectAll_icon.png);}
+	#LOCK_SELECTION_menuItem{background-image:url(graphics/applications/icons/lockSelection_icon.png);}
+	#UNLOCK_ALL_menuItem{background-image:url(graphics/applications/icons/unlockAll_icon.png);}
+	#JOIN_POINTS_menuItem{background-image:url(graphics/applications/icons/pathJoinPoints.png);}
+	#EFFECT_OUTER_SHADOW_menuItem , #EFFECT_INNER_SHADOW_menuItem {background-image:url(graphics/applications/icons/effectList_icon.png);}
+	#USE_IMAGE_AS_PATTERN_menuItem {background-image:url(graphics/applications/icons/useImageAsPattern_icon.png);}
+	#CUT_menuItem{background-image:url(graphics/applications/icons/cut_icon.png);}
+	#COPY_menuItem{background-image:url(graphics/applications/icons/copy_icon.png);}
+	#PASTE_menuItem{background-image:url(graphics/applications/icons/paste_icon.png);}
+	#PASTE_IN_PLACE_menuItem{background-image:url(graphics/applications/icons/pasteInPlace_icon.png);}
+	#FILL_menuItem{background-image:url(graphics/applications/icons/fillMenuItem_icon.png);}
+	#STROKE_menuItem{background-image:url(graphics/applications/icons/strokeMenuItem_icon.png);}
+	#STROKE_WIDTH_menuItem{background-image:url(graphics/applications/icons/strokeWidthMenuItem_icon.png);}
+	#TEXT_TO_PATH_menuItem{background-image:url(graphics/applications/icons/textToPath_icon.svg);}
+/* 2D PARAMETERS */
+
+
+
+
+
+/* transform Parameters */
+.parameter_docSetting {  background-image:url(graphics/applications/icons/setting_icon.png); background-position: right 4px ; }
+.parameter_instanceId {  background-image:url(graphics/applications/icons/instanceID_icon.png); background-position: right 4px ; }
+.parameter_anchorLink {  background-image:url(graphics/applications/icons/link_icon.png); background-position: right 4px ; } 
+.parameter_anchorLinkTarget {  background-image:url(graphics/applications/icons/linkTarget_icon.png); background-position: right 4px ; }
+.parameter_class {  background-image:url(graphics/applications/icons/class_icon.png); background-position: right 4px ; }
+.parameter_position_2D {  background-image:url(graphics/applications/icons/position2D_icon.png); background-position: right 15px ; }
+.parameter_size_2D {  background-image:url(graphics/applications/icons/size2D_icon.png);  background-position: right 15px ; } 
+.parameter_scale_2D {  background-image:url(graphics/applications/icons/scale2D_icon.png);   background-position: right 15px ; }
+.parameter_rotation_2D {  background-image:url(graphics/applications/icons/rotation2D_icon.png);  background-position: right 5px ;  }
+
+/* TWEEN PARAMETERS */
+
+.parameter_tweenBegin {  background-image:url(graphics/applications/icons/tweenBegin_icon.png); }
+.parameter_tweenDur {  background-image:url(graphics/applications/icons/tweenDur_icon.png); }
+.parameter_tweenEnd {  background-image:url(graphics/applications/icons/tweenEnd_icon.png); }
+.parameter_tweenRepeatCount {  background-image:url(graphics/applications/icons/tweenRepeatCount_icon.png); }
+.parameter_tweenFrom {  background-image:url(http://www.janvas.com/XOSYSTEM/PROJECTS/janvas_apps_suite_3.0_public/resources/gray_3.0/images/graphics/applications/tweenFrom_icon.png); }
+.parameter_tweenTo {  background-image:url(http://www.janvas.com/XOSYSTEM/PROJECTS/janvas_apps_suite_3.0_public/resources/gray_3.0/images/graphics/applications/tweenTo_icon.png); }
+.parameter_tweenAttributeName {  background-image:url(graphics/applications/icons/tweenAttributeName_icon.png); }
+
+
+/* page Parameters */
+.parameter_pageFormats {  background-image:url(graphics/applications/icons/pageFormat_icon.png); background-position: right 2px ;}
+.parameter_pageSize {  background-image:url(graphics/applications/icons/page_icon.png); background-position: right 14px ;}
+.parameter_unityAndDecimal {  background-image:url(graphics/applications/icons/unityAndDecimal_icon.png); background-position: right 14px ;}
+.parameter_snapValue {  background-image:url(graphics/applications/icons/snapValue_icon.png); background-position: right 4px ;}
+.parameter_grid {  background-image:url(graphics/applications/icons/grid_icon.png); background-position: right 4px ;}
+.parameter_moveByArrowValue {  background-image:url(graphics/applications/icons/arrowKeys_icon.png); background-position: right 4px ;}
+
+/* text Parameters */
+.parameter_textLineHeight {  background-image:url(graphics/applications/icons/textLineHeight_icon.png);  background-position: right 5px ;}
+.parameter_fontSize {  background-image:url(graphics/applications/icons/fontSize_icon.png);  background-position: right 5px ; }
+
+#FONT_LIST_MENU>a {  background-image:url(graphics/applications/icons/font_icon.svg); }
+#FONT_LIST_MENU>a select {  width:30px; height:30px; -webkit-appearance: none; background: transparent; border: 0; padding-left: 30px; }
+
+
+
+/* graphic attributes Parameters */
+.parameter_lineWidth {  background-image:url(graphics/applications/icons/lineWidth_icon.png); }
+
+/* #ANCHOR_LINK_BUTTON>a {  background-image:url(graphics/applications/icons/link_icon.png); } */
+
+#LINE_OPTIONS_BUTTON>a {  background-image:url(graphics/applications/icons/lineCapSquare_icon.png); }
+	#LINE_WIDTH_menuItem{ background-image:url(graphics/applications/icons/lineCapSquare_icon.png);  }
+	#LINE_CAP_BUTT_menuItem{ background-image:url(graphics/applications/icons/lineCapButt_icon.png);  }
+	#LINE_CAP_ROUND_menuItem{ background-image:url(graphics/applications/icons/lineCapRound_icon.png);  }
+	#LINE_CAP_SQUARE_menuItem{  background-image:url(graphics/applications/icons/lineCapSquare_icon.png);  }
+	#LINE_JOIN_MITER_menuItem{background-image:url(graphics/applications/icons/lineJoinMiter_icon.png);  }
+	#LINE_JOIN_ROUND_menuItem{background-image:url(graphics/applications/icons/lineJoinRound_icon.png);   }
+	#LINE_JOIN_BEVEL_menuItem{ background-image:url(graphics/applications/icons/lineJoinBevel_icon.png);   }
+
+
+/* cursors */
+
+.default_cur{ cursor:default;}			
+.arrowBlackOverInstance_cur{ cursor:url(graphics/applications/cursors/arrowBlackOverInstance_cur.png) 0 0, default;}
+.arrowBlackOverVertex_cur{ cursor:url(graphics/applications/cursors/arrowBlackOverVertex_cur.png) 0 0, default;}
+.boundingHandle_cur{ cursor:url(graphics/applications/cursors/boundingHandle_cur.png) 16 16, default;}
+
+.arrowWhite_cur{ cursor:url(graphics/applications/cursors/arrowWhite_cur.png), default;}
+.arrowWhiteOverInstance_cur{  cursor:url(graphics/applications/cursors/arrowWhiteOverInstance_cur.png) 0 0, default;}
+.arrowWhiteOverVertex_cur{  cursor:url(graphics/applications/cursors/arrowWhiteOverVertex_cur.png) 0 0, default;}
+
+.zoom_cur{  cursor:url(graphics/applications/cursors/zoom_cur.png), default;}
+
+.pen_cur{  cursor:url(graphics/applications/cursors/pen_cur.png) 16 16, default;}
+
+.line_cur{ cursor:url(graphics/applications/cursors/line_cur.png) 16 16, default; }
+.lineOverVertex_cur{ cursor:url(graphics/applications/cursors/lineOverVertex_cur.png) 16 16, default; }
+.crosshair_cur{  cursor:url(graphics/applications/cursors/crosshair_cur.png) 16 16, default;}
+.crosshairOverVertex_cur{   cursor:url(graphics/applications/cursors/crosshairOverVertex_cur.png) 16 16, default;}
+
+.pathAddPoint_cur{  cursor:url(graphics/applications/cursors/pathAddPoint_cur.png) 16 16, default;}
+.pathAddPointOverVertex_cur{  cursor:url(graphics/applications/cursors/pathAddPointOverVertex_cur.png) 16 16, default;}
+
+.convertPathPoint_cur{  cursor:url(graphics/applications/cursors/convertPathPoint_cur.png) 16 16, default;}
+.convertPathPointOverVertex_cur{  cursor:url(graphics/applications/cursors/convertPathPointOverVertex_cur.png) 16 16, default;}
+
+.ellipse_cur{  cursor:url(graphics/applications/cursors/ellipse_cur.png) 16 16, default;}
+.ellipseOverVertex_cur{  cursor:url(graphics/applications/cursors/ellipseOverVertex_cur.png) 16 16, default;}
+
+.path_cur{  cursor:url(graphics/applications/cursors/path_cur.png) 16 16, default;}
+.pathOverVertex_cur{  cursor:url(graphics/applications/cursors/pathOverVertex_cur.png) 16 16, default;}
+
+.rect_cur{  cursor:url(graphics/applications/cursors/rect_cur.png) 16 16, default;}
+.rectOverVertex_cur{  cursor:url(graphics/applications/cursors/rectOverVertex_cur.png) 16 16, default;}
+
+.textBox_cur{  cursor:url(graphics/applications/cursors/textBox_cur.png) 16 16, default;}
+
+.editGradientPoints_cur{  cursor:url(graphics/applications/cursors/editGradientPoints_cur.png) 16 16, default;}
+.editGradientPointsOverVertex_cur{  cursor:url(graphics/applications/cursors/editGradientPointsOverVertex_cur.png) 16 16, default;}
+
+.eyedropper_cur{  cursor:url(graphics/applications/cursors/eyedropper_cur.png) 9 24, default;}
+
+.hand_cur{  cursor:url(graphics/applications/cursors/hand_cur.png), default;}
+.hand_close_cur{  cursor:url(graphics/applications/cursors/hand_close_cur.png), default;}
+
+.pathRemovePoint_cur{  cursor:url(graphics/applications/cursors/pathRemovePoint_cur.png) 16 16, default;}
+.pathRemovePointOverVertex_cur{  cursor:url(graphics/applications/cursors/pathRemovePointOverVertex_cur.png) 16 16, default;}
+
+.rotate_cur{  cursor:url(graphics/applications/cursors/rotate_cur.png) 16 16, default;}
+.rotateOverVertex_cur{  cursor:url(graphics/applications/cursors/rotateOverVertex_cur.png) 16 16, default;}
+.translateVertex_cur{  cursor:url(graphics/applications/cursors/translateVertex_cur.png) 0 0, default;}
+.translateVertexOverVertex_cur{  cursor:url(graphics/applications/cursors/translateVertexOverVertex_cur.png) 0 0, default;}
+
+.translateObject_cur{  cursor:url(graphics/applications/cursors/translateObject_cur.png) 16 16, default;}
+.translateObjectOverVertex_cur{  cursor:url(graphics/applications/cursors/translateObjectOverVertex_cur.png) 16 16, default;}
+
+
+.pathCutter_cur{  cursor:url(graphics/applications/cursors/pathCutter_cur.png) 16 16, default;}
+.pathCutterOverVertex_cur{  cursor:url(graphics/applications/cursors/pathCutterOverVertex_cur.png) 16 16, default;}
+
+
+.boundingHandle_cur{  cursor:url(graphics/applications/cursors/boundingHandle_cur.png) 16 16, default;}
+.boundingHandleDragOverVertex_cur{  cursor:url(graphics/applications/cursors/boundingHandleDragOverVertex_cur.png) 16 16, default;}
+
+

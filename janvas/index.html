@@ -1,0 +1,1524 @@
+
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Janvas 3.0.0</title>
+		<meta name="description" content="The online graphics editor - Create Vector Graphics for the web in HTML, SVG and PHP"/>	    
+		<meta http-equiv="Content-Language" content="en-EN" />
+		
+		<!-- MOBILE SETUP -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />		
+
+		
+		<!-- GLOBAL CSS -->	
+		<link rel="stylesheet" href="resources/gray_3.0/system_style.css" />
+		<link rel="stylesheet" href="resources/gray_3.0/janvas_style.css" />
+		<link rel="stylesheet" href="resources/animate.min.css" />
+		<link rel="stylesheet" href="resources/codemirror/codemirror.css" />		
+
+		<!-- JANVAS MINIFIED -->	    		
+		<script language="javascript" src="resources/janvas_minified.js"></script>
+
+		
+		
+		<!-- GOOGLE IN APP PAY PRODUCTION -->
+		<!--<script src="https://wallet.google.com/inapp/lib/buy.js"></script> -->
+		
+		<!-- GOOGLE FONT -->
+		<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+		
+		<!-- GOOGLE APIS -->
+		<script type="text/javascript" src="https://apis.google.com/js/client.js"></script>
+
+		<!-- GOOGLE ANALYTICS -->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-444773-12']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+		
+		
+				
+	</head>
+
+<body class="unselectable" >	
+		
+	<div id="PRINTABLE_CONTENT" >
+	</div>
+	
+	<div id="TEMPLATES" >
+	</div> <!-- TEMPLATES -->
+			
+	<div id="APPLICATION" tabindex="1" >
+		
+		
+		
+		<!-- <div id="LAYOUT" > -->	
+				
+			
+			
+				<!-- MAIN_TOOLBAR_2D -->
+				<ul id="MAIN_TOOLBAR_2D" class="toolbar main_tools hbar "  >	
+					
+					<li class="logo"><a href="http://www.janvas.com" target="_blank" style="width:100%; height:100%;"></a></li>											
+					<li id="SELECT_GLOBAL_2D_toolButton"  toolName="selectGlobal_tool" localize="title" title="Objects selection" >
+						<a></a>
+					</li>
+				
+				<li id="SELECT_LOCAL_2D_toolButton"  toolName="selectLocal_tool" localize="title" title="Points selection" >
+					<a></a>
+				</li>
+				
+		    	<li id="PAN_2D_toolButton"  toolName="panView_tool"  ><a></a></li>
+		    	<li id="ZOOM_2D_toolButton"  toolName="zoomView_tool"  ><a></a></li>
+				
+				
+				<li id="PATH_TOOLS_2D_toolButton" class="arrowSubElements" toolName="drawPath_tool"  >
+		        	<ul class="toolbar hbar dropShadow" style="width:190px; height:38px; left:-1px; top:100%;"  >
+				        <li id="PATH_2D_toolButton"  toolName="drawPath_tool"  ><a></a></li>
+				        <li id="ADD_PATH_POINT_2D_toolButton"  toolName="addPathPoint_tool" ><a></a></li>
+						<li id="REMOVE_PATH_POINT_2D_toolButton"  toolName="removePathPoint_tool" ><a></a></li>
+				        <li id="SPLIT_PATH_2D_toolButton"  toolName="splitPath_tool"  ><a></a></li>
+				        <li id="CONVERT_PATH_POINT_2D_toolButton"  toolName="convertPathPoint_tool"  ><a></a></li>
+		        	</ul>
+		        	<a></a>       	
+		        </li>
+
+		        <li id="DRAW_FREEHAND_TOOLS_2D_toolButton" class="arrowSubElements" toolName="drawFreeHand_tool"  >
+					<ul class="toolbar hbar dropShadow" style="width:76px; height:38px; left:-1px; top:100%;"  >
+						<li id="FREEHAND_2D_toolButton"  toolName="drawFreeHand_tool"  ><a></a></li>
+						<li id="BRUSH_2D_toolButton"  toolName="drawBrush_tool"  ><a></a></li>
+					</ul>
+					<a></a>
+				</li>
+				
+		        <li id="DRAW_TOOLS_2D_toolButton" class="arrowSubElements" toolName="drawRectangle_tool"  >
+		        	<ul class="toolbar hbar dropShadow" style="width:114px; height:38px; left:-1px; top:100%;"  >
+						<li id="RECT_2D_toolButton"  toolName="drawRectangle_tool" ><a></a></li>
+						<li id="ELLIPSE_2D_toolButton"  toolName="drawEllipse_tool"  ><a></a></li>
+						<li id="LINE_2D_toolButton"  toolName="drawLine_tool" ><a></a></li>
+						
+					</ul>
+		        	<a></a>       	
+		        </li>
+				
+				<li id="TEXT_2D_toolButton"  toolName="drawTextBox_tool"  ><a></a></li>
+				
+				<li id="EDIT_GRAPHIC_ATTRIBUTES_2D_toolButton" class="arrowSubElements" toolName="eyeDropper_tool"  >
+					<ul class="toolbar hbar dropShadow" style="width:76px; height:38px; left:-1px; top:100%;"  >
+						<li id="EDIT_GRADIENT_POINTS_2D_toolButton"  toolName="editGradientPoints_tool"  ><a></a></li>
+						<li id="EYEDROPPER_2D_toolButton"  toolName="eyeDropper_tool"  ><a></a></li>
+					</ul>
+					<a></a>
+				</li>
+
+				<li id="EDIT_TRANSFORM_2D_toolButton" class="arrowSubElements" toolName="rotate_tool"  >
+					<ul class="toolbar hbar dropShadow" style="width:114px; height:38px; left:-1px; top:100%;"  >
+						<li id="ROTATE_2D_toolButton"  toolName="rotate_tool"  ><a></a></li>
+						<li id="HOR_REFLECT_toolButton"  ><a></a></li>
+						<li id="VER_REFLECT_toolButton"  ><a></a></li>
+					</ul>
+					<a></a>
+				</li>
+				
+				<li id="SELECTION_ACTIONS_2D_toolButton" class="arrowSubElements"  >
+					<ul class="popupMenu dropShadow" style="left:-1px; top:100%;" >
+				        <li id="CUT_menuItem" >Cut</li>
+				        <li id="COPY_menuItem" >Copy</li>
+				        <li id="PASTE_menuItem" >Paste</li>
+				        <li id="PASTE_IN_PLACE_menuItem" >Paste in place</li>
+				        <li class="divisor"></li>
+				        <li id="SELECT_ALL_menuItem" >Select all</li>
+				        <li class="divisor"></li>
+				        <li id="DUPLICATE_menuItem"  >Duplicate</li>
+				        <li class="divisor"></li>
+		        		<li id="GROUP_menuItem"  >Group</li>
+		        		<li id="UNGROUP_menuItem"   >Ungroup</li>
+		        		<li class="divisor"></li>
+						<li id="LOCK_SELECTION_menuItem" >Lock selection</li>
+						<li id="UNLOCK_ALL_menuItem" >Unlock all</li>
+						<li class="divisor"></li>
+		        		<li id="CREATE_COMPOSED_PATH_menuItem"   >Compose Path</li>
+		        		<li id="CREATE_MASK_menuItem"   >Create Mask</li>
+		        		<li class="divisor"></li>			        
+				        <li id="JOIN_POINTS_menuItem" >Join points</li>
+				        <li id="TEXT_TO_PATH_menuItem" >Text to path</li>
+				        <li class="divisor"></li>			        
+				        <li id="EFFECT_OUTER_SHADOW_menuItem" effectClassName="XOS_Shadow_effect" effectProperties="{'shadowOffsetX':5,'shadowOffsetY':5,'shadowBlur':5,'shadowColor':'rgba(0,0,0,.5)'}" >Outer shadow</li>			        
+				        <li id="EFFECT_INNER_SHADOW_menuItem" effectClassName="XOS_Shadow_effect" effectProperties="{'shadowOffsetX':-1,'shadowOffsetY':-1,'shadowBlur':4,'shadowColor':'rgba(0,0,0,.75)'}" >Inner shadow</li>			        
+		        		<li class="divisor"></li>			        
+				        <li id="USE_IMAGE_AS_PATTERN_menuItem" >Use Image as Pattern</li>
+		        	</ul>
+		        	<a></a>
+				</li>
+				
+
+				<li id="BRING_FRONT_toolButton" class="arrowSubElements"  >
+					<ul class="toolbar hbar dropShadow" style="width:38px; height:38px; left:-1px; top:100%;"  >
+						<li id="BRING_UP_toolButton"   ><a></a></li>
+					</ul>
+					<a></a>
+				</li>
+				<li id="SEND_BACK_toolButton" class="arrowSubElements"  >
+					<ul class="toolbar hbar dropShadow" style="width:38px; height:38px; left:-1px; top:100%;"  >
+						<li id="BRING_DOWN_toolButton"   ><a></a></li>
+					</ul>
+					<a></a>
+				</li>
+				
+				
+				<li id="ALIGNMENTS_toolButton" class="arrowSubElements" >
+					<ul class="toolbar hbar dropShadow" style="width:114px; height:228px; left:-1px; top:100%;"  >
+						<li id="TEXT_ALIGN_LEFT" ><a></a></li>
+						<li id="TEXT_ALIGN_CENTER" ><a></a></li>
+						<li id="TEXT_ALIGN_RIGHT" ><a></a></li>
+		
+						<li id="ALIGN_LEFT" ><a></a></li>
+		        		<li id="ALIGN_VCENTER" ><a></a></li> 
+				        <li id="ALIGN_RIGHT" ><a></a></li>
+				        
+				        <li id="ALIGN_TOP" ><a></a></li>
+				        <li id="ALIGN_HCENTER" ><a></a></li>
+				        <li id="ALIGN_BOTTOM" ><a></a></li>
+		
+				        <li id="DISTRIBUITE_LEFT" ><a></a></li>
+		        		<li id="DISTRIBUITE_VCENTER" ><a></a></li> 
+				        <li id="DISTRIBUITE_RIGHT" ><a></a></li>
+				        
+				        <li id="DISTRIBUITE_TOP" ><a></a></li>
+				        <li id="DISTRIBUITE_HCENTER" ><a></a></li>
+				        <li id="DISTRIBUITE_BOTTOM" ><a></a></li>
+				        
+				        <li id="DISTRIBUITE_HSPACE" ><a></a></li>
+				        <li id="DISTRIBUITE_VSPACE" ><a></a></li>
+		
+		        	</ul>
+					<a></a>
+				</li>
+	
+				<li id="UNDO_toolButton"   ><a></a></li>
+		    	<li id="REDO_toolButton"   ><a></a></li>
+		    	
+				<li id="TRASH_toolButton"   ><a></a></li>
+				<li id="PRINT_toolButton"   ><a></a></li>
+				<li id="SAVE_toolButton" class="arrowSubElements"  >
+					<ul class="popupMenu dropShadow" style="left:-1px; top:100%;" >
+<!-- 						<li  id="CREATE_FILE_3D_menuItem"   docTitle="untitled" fileExtension="svg3d" >New - 3D</li> -->
+<!-- 						<li  id="CREATE_FILE_SVG_menuItem" class="svg_icon16x16" style="background-size: 16px 16px; background-position-x: 8px;" docTitle="untitled" fileExtension="svg"   >New - SVG</li> -->
+						<li  id="CREATE_FILE_HTML_menuItem" class="html_icon16x16" style="background-size: 16px 16px; background-position-x: 8px;" docTitle="untitled" fileExtension="html" >New document</li>
+<!--
+						<li  id="CREATE_FILE_JS_menuItem" class="js_icon16x16" style="background-position-x: 8px;" docTitle="untitled" fileExtension="js"   >New - JS</li>
+					    <li  id="CREATE_FILE_CSS_menuItem" class="css_icon16x16" style="background-position-x: 8px;" docTitle="untitled" fileExtension="css"   >New - CSS</li>
+-->
+					    <li class="divisor"></li>
+						<li id="OPEN_menuItem"  >Open…</li>
+						<li id="OPEN_GOOGLE_DRIVE_menuItem"  ><a style="color:white;" href="https://drive.google.com" target="_blank" >Open Google Drive</a></li>
+						<li class="divisor"></li>
+				        <li id="SAVE_menuItem" >Save</li>
+				        <li id="SAVE_AS_menuItem"  >Save as...</li>
+				       <!--
+ <li class="divisor"></li>
+				        <li id="SAVE_HTML_menuItem" >Save HTML</li>
+				        <li id="SAVE_HTML_AS_menuItem"  >Save HTML as...</li>
+-->
+				        <!--
+<li class="divisor"></li>
+				        <li id="EXPORT_AS_JPG_menuItem" >Export JPG Image...</li>
+				        <li id="EXPORT_AS_PNG_menuItem" >Export PNG Image...</li>
+-->
+				        <li class="divisor"></li>
+				        <li id="UPLOAD_FILE_menuItem" style="position:relative;" >Upload file...<input id="UPLOAD_FILE_TEXTFIELD" type="file" style="position:absolute; display: block; left:0; top:0; opacity:0; width:100%; " /></li>
+				        <li class="divisor"></li>
+				        <li id="SAVE_AS_START_TEMPLATE_menuItem" >Save as start template</li>
+				        <li id="RESET_START_TEMPLATE_menuItem"  >Reset start template</li>
+				        <li class="divisor"></li>
+				        <!-- <li id="GENERATE_SVG_menuItem" draggable="true" >Preview Document</li> -->
+						<li id="GENERATE_IMAGE_PNG_menuItem" draggable="true" >Preview PNG image</li>
+						<li id="GENERATE_IMAGE_JPG_menuItem" draggable="true" >Preview JPG image</li>						
+		        	</ul>
+		        	<a></a>
+				</li>
+				<li id="DRIVE_FILE_BROWSER_WIN_button" ><a></a></li>
+				<li id="HELP_toolButton"   ><a href="http://www.janvas.com" target="_blank" ></a></li>
+				</ul><!-- MAIN_TOOLBAR_2D -->
+				
+				
+				<div id="CONTENT"  >
+				
+				
+				<div class="column" style="left:0; right:196px;" >
+					<ul id="TABS_DOCUMENTS" class="tabBar hbar"  ></ul>
+					<div id="DOCUMENTS" class="radioPanels"  ></div>
+				</div>
+				
+				<div class="columnsResizer" style="right:194px;" ></div>
+				
+				
+				<div class="column" style="width:194px; right:0; background-color: #333333;" >
+				
+					<div class="header hbar">
+						Properties
+					</div>
+
+			<div id="INSPECTOR_PANEL" class="scrollableY darkScrollbar radioPanels" >
+					
+					
+					<div id="PAGE_PROPERTIES_2D_PANEL" >
+							
+							<div class="title" >Document</div>
+							
+							
+							<div class="inspector_parameter parameter_pageFormats"  >	
+							  	<div class="title">Page presets</div>
+							  	<div class="property_container"  >
+									<label for="DOC_SIZE_MENU">d</label>
+									<select id="DOC_SIZE_MENU"   >
+										<option selected="true" value="">Format</option>
+										<optgroup label="Press">
+											<option  value="595,842">A4 Vertical</option>
+											<option  value="842,595">A4 Horizontal</option>
+											<option  value="842,1190">A3 Vertical</option>
+											<option  value="1190,842">A3 Horizontal</option>
+											<option  value="516,728">B5  Vertical</option>
+											<option  value="728,516">B5  Horizontal</option>
+											<option  value="728,1032">B4  Vertical</option>
+											<option  value="1032,728">B4  Horizontal</option>
+											<option  value="792,1224">Tabloid Horizontal</option>
+											<option  value="1224,792">Tabloid Vertical</option>
+											<option  value="612,1008">Legal Horizontal</option>
+											<option  value="1008,612">Legal Vertical</option>
+											<option  value="612,792">Lettera Horizontal</option>
+											<option  value="792,612">Lettera Vertical</option>
+										</optgroup>
+										<optgroup label="Web">
+											<option  value="1024,768">1024 x 768</option>
+											<option  value="980,600">980 x 600</option>
+											<option  value="640,480">640 x 480</option>
+										</optgroup>
+										<optgroup label="Mobile">
+											<option  value="320,240">320 x 240</option>
+											<option  value="640,480">640 x 480</option>
+											<option  value="640,320">640 x 320</option>
+										</optgroup>
+									</select>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_pageSize" >	
+							  	<div class="title">Page Size</div>
+							  	<div class="property_container"  >
+							  		<label for="sizeX">x</label>
+							  		<input  type="number" name="x" id="sizeX" onclick="this.select();" value="595"/>
+							  	</div>
+							  	<div class="property_container">														
+							  		<label for="sizeY">y</label>
+							  		<input  type="number" name="y" id="sizeY" onclick="this.select();"  value="842"/>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter parameter_pageAlignment"  >	
+							  	<div class="title">HTML Page alignment</div>
+							  	<div class="property_container"  >
+									<label for="pageAlignment">a</label>
+									<select id="pageAlignment" name="pageAlignment"  >
+											<option value="none">none</option>
+											<option value="center-horizontally">center horizontally</option>
+											<option value="center-horizontally-vertically">center horizontally vertically</option>
+											<option value="no-margins">no margins</option>
+									</select>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter" >	
+							  	<div class="title">Page background</div>
+							  	<div class="property_container">
+						  			<div class="color_container">
+						  				<div id="bodyBackgroundColor" class="color">
+						  				</div>
+						  			</div>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_unityAndDecimal" >	
+							  	<div class="title">units / decimals</div>
+							  	
+							  	<div class="property_container" >
+							  		<label  for="UNITY_MENU">u</label>
+									<select id="UNITY_MENU" >
+										<option selected="true" value="UNIT_PIXEL">px</option>
+										<option value="UNIT_MILLIMETER">mm</option>
+										<option value="UNIT_CENTIMETER">cm</option>
+										<option value="UNIT_METER">m</option>
+										<option value="UNIT_KILOMETER">km</option>
+										<option value="UNIT_FOOT">foot</option>
+										<option value="UNIT_INCH">inch</option>
+										<option value="UNIT_YARD">yard</option>
+										<option value="UNIT_MILE">mile</option>
+										<option value="UNIT_NAUTICAL_MILE">nautical mile</option>
+									</select>
+							  	</div>
+							  	<div class="property_container">
+									<label for="UNITY_DECIMALS_MENU">d</label>
+									<select id="UNITY_DECIMALS_MENU"   >
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option selected="true" value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter  parameter_snapValue" >	
+							  	<div class="title">Snap range</div>
+							  	<div class="property_container ">
+							  		<label for="screenSnapValue">s</label>
+							  		<input  type="text" name="screenSnapValue" id="screenSnapValue" onclick="this.select();" value="0"/>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter  parameter_grid" >	
+							  	<div class="title">Snap grid</div>
+							  	<div class="property_container">
+							  		<label for="gridSnapValue">v</label>
+							  		<input  type="text" name="gridSnapValue" id="gridSnapValue" onclick="this.select();"  value="0"/>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter  parameter_moveByArrowValue" >	
+							  	<div class="title">Move value</div>
+							  	<div class="property_container">
+							  		<label for="moveByArrowValue">v</label>
+							  		<input  type="text" name="moveByArrowValue" id="moveByArrowValue" onclick="this.select();"  value="0"/>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter  " >	
+							  	<div class="title">Include files</div>
+							  	<div class="property_container">
+							  		<button  id="editIncludes_button"> CSS-JS </button>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  " >	
+							  	<div class="title">Page Title and Desc</div>
+							  	<div class="property_container">
+							  		<button  id="editTitleDescription_button"> Title - Desc... </button>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  " >	
+							  	<div class="title">Test page in browser</div>
+							  	<div class="property_container">
+							  		<button  id="showPagePreview_button"> Preview HTML </button>
+							  	</div>
+						  	</div>
+						  	
+						  								  
+						</div> <!-- PAGE_PROPERTIES_2D_PANEL  -->
+
+
+
+
+					<div id="GRAPHIC_PROPERTIES_2D_PANEL"  >
+							
+							<div class="title" >Object 2D</div>
+						  	
+						  	<div class="inspector_parameter  parameter_position_2D" >	
+							  	<div class="title">Position</div>
+							  	<div class="property_container">
+							  		<label for="positionX">x</label>
+							  		<input  type="text" name="positionX" id="positionX"  onclick="this.select();" />
+							  	</div>
+							  	<div class="property_container">														
+							  		<label for="positionY">y</label>
+							  		<input  type="text" name="positionY" id="positionY"  onclick="this.select();" />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_size_2D" >	
+							  	<div class="title">Size</div>
+							  	<div class="property_container">
+							  		<label for="sizeX">x</label>
+							  		<input  type="text" name="sizeX" id="sizeX"  onclick="this.select();"  />
+							  	</div>
+							  	<div class="property_container">														
+							  		<label for="sizeY">y</label>
+							  		<input  type="text" name="sizeY" id="sizeY"  onclick="this.select();" />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_rotation_2D" >	
+							  	<div class="title">Rotation</div>
+							  	<div class="property_container">
+							  		<label for="rotation">r</label>
+							  		<input  type="text" name="rotation" id="rotation"  onclick="this.select();"  />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_scale_2D" >	
+							  	<div class="title">Scale</div>
+							  	<div class="property_container">
+							  		<label for="scaleX">x</label>
+							  		<input  type="text" name="scaleX" id="scaleX"  onclick="this.select();"  />
+							  	</div>
+							  	<div class="property_container">														
+							  		<label for="scaleY">y</label>
+							  		<input  type="text" name="scaleY" id="scaleY"  onclick="this.select();" />
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter"  >	
+							  	<div class="title">Blend mode</div>
+							  	<div class="property_container"  >
+									<label for="compositeOperation">c</label>
+									<select id="compositeOperation" name="compositeOperation"  >
+											<!--
+<option  value="source-atop">source-atop</option>
+											<option  value="source-in">source-in</option>
+											<option  value="source-out">source-out</option>
+											<option  value="destination-atop">destination-atop</option>
+											<option  value="destination-in">destination-in</option>
+											<option  value="destination-out">destination-out</option>
+											<option  value="destination-over">destination-over</option>
+											<option  value="lighter">lighter</option>
+											<option  value="copy">copy</option>
+											<option  value="xor">xor</option>
+-->
+											<option  value="source-over">normal</option>
+											<option  value="multiply">multiply</option>
+											<option  value="screen">screen</option>
+											<option  value="overlay">overlay</option>
+											<option  value="darken">darken</option>
+											<option  value="lighten">lighten</option>
+											<option  value="color-dodge">color-dodge</option>
+											<option  value="color-burn">color-burn</option>
+											<option  value="hard-light">hard-light</option>
+											<option  value="soft-light">soft-light</option>
+											<option  value="difference">difference</option>
+											<option  value="exclusion">exclusion</option>
+											<option  value="hue">hue</option>
+											<option  value="saturation">saturation</option>
+											<option  value="color">color</option>
+											<option  value="luminosity">luminosity</option>
+											
+											
+											
+														
+									</select>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  " >	
+							  	<div class="title">Stroke width</div>
+							  	<div class="property_container">														
+							  		<label for="lineWidth">s</label>
+							  		<input  type="number" name="lineWidth" id="lineWidth"  onclick="this.select();" />
+							  	</div>
+							  	<div id="LINE_OPTIONS_BUTTON" class="icon arrowSubElements">
+						        	<a></a>							  	
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_fontSize" >	
+							  	<div class="title">Font size</div>
+							  	<div class="property_container">														
+							  		<label  for="fontSize">d</label>
+							  		<input  type="number" name="fontSize" id="fontSize" onblur="window.scrollTo(0, 0);" onclick="this.select();" />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_textLineHeight" >	
+							  	<div class="title">Interline</div>
+							  	<div class="property_container">														
+							  		<label for="lineHeight">i</label>
+							  		<input  type="number" name="lineHeight" id="lineHeight" onblur="window.scrollTo(0, 0);" onclick="this.select();" />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter  parameter_font" >	
+							  	<div class="title">Font</div>
+							  	<div class="property_container">														
+							  		<label for="font">f</label>
+							  		<input  type="text" name="font" id="font"  onclick="this.select();" />
+							  	</div>
+							  	<div id="FONT_LIST_MENU" class="icon arrowSubElements">
+							  		<a>
+						        	</a>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<!--
+<div class="inspector_parameter  parameter_font" >	
+							  	<div class="title">Font</div>
+							  	<div class="property_container">														
+							  		<label for="font">f</label>
+							  		<input  type="text" name="font" id="font"  onclick="this.select();" />
+							  	</div>
+							  	<div id="FONT_LIST_MENU" class="icon arrowSubElements">
+						        	<a>
+						        		<select id="fontList" name="fontList"  ></select>
+						        	</a>
+						        								  	
+							  	</div>
+						  	</div>
+-->
+						  	
+						  	<!--
+<div class="inspector_parameter parameter_fontStyle"  >	
+							  	<div class="title">Font Style</div>
+							  	<div class="property_container"  >
+									<label for="fontStyle">s</label>
+									<select id="fontStyle" name="fontStyle"  >
+											<option  value="normal">Normal</option>
+											<option  value="italic">Italic</option>
+											<option  value="bold">Bold</option>
+											<option  value="bold italic">Italic + Bold</option>
+									</select>
+							  	</div>
+						  	</div>
+-->
+						  	
+						  	
+							<div class="inspector_parameter parameter_fontStyle"  >	
+							  	<div class="title">Font Style</div>
+							  	<div class="property_container"  >
+									<label for="fontStyle">s</label>
+									<select id="fontStyle" name="fontStyle"  >
+											<option  value="normal">Normal</option>
+											<option  value="italic">Italic</option>
+									</select>
+							  	</div>
+						  	</div>
+
+						  	<div class="inspector_parameter parameter_fontWeight"  >	
+							  	<div class="title">Font Weight</div>
+							  	<div class="property_container"  >
+									<label for="fontWeight">s</label>
+									<select id="fontWeight" name="fontWeight"  >
+											<option  value="normal">Normal</option>
+											<option  value="bold">Bold</option>
+											<!--
+<option  value="100">100</option>
+											<option  value="200">200</option>
+											<option  value="300">300</option>
+											<option  value="400">400</option>
+											<option  value="500">500</option>
+											<option  value="600">600</option>
+											<option  value="700">700</option>
+											<option  value="800">800</option>
+											<option  value="900">900</option>
+-->
+									</select>
+							  	</div>
+						  	</div>
+
+						  	<div class="inspector_parameter"  >	
+							  	<div class="title">Place into HTML</div>
+							  	<div class="property_container"  >
+									<label for="placeIntoHtmlLayer">h</label>
+									<select id="placeIntoHtmlLayer" name="placeIntoHtmlLayer"  >
+											<option  value="no">no</option>
+											<option  value="yes">yes</option>
+									</select>
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter parameter_instanceId" >	
+							  	<div class="title">Instance</div>
+							  	<div class="property_container">
+							  		<label for="id">id</label>
+							  		<input  type="text" name="id" id="id"    />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter parameter_class" >	
+							  	<div class="title">Class</div>
+							  	<div class="property_container">
+							  		<label for="classNameList">cl</label>
+							  		<input  type="text" name="classNameList" id="classNameList"    />
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter parameter_anchorLink" >	
+							  	<div class="title">Link url</div>
+							  	<div class="property_container">
+							  		<label for="anchorLink">u</label>
+							  		<input  type="text" name="anchorLink" id="anchorLink"    />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter parameter_anchorLinkTarget" >	
+							  	<div class="title">Link target</div>
+							  	<div class="property_container">
+							  		<label for="anchorLinkTarget">t</label>
+							  		<input  type="text" name="anchorLinkTarget" id="anchorLinkTarget"    />
+							  	</div>
+						  	</div>
+						  							  	
+						  	<!--
+<div class="inspector_parameter parameter_contentUrl" >	
+							  	<div class="title">Source url</div>
+							  	<div class="property_container">
+							  		<label for="sourceUrl">u</label>
+							  		<input  type="text" name="sourceUrl" id="sourceUrl"    />
+							  	</div>
+						  	</div>
+-->
+						  	
+						  	<div class="inspector_parameter parameter_contentUrl" >	
+							  	<div class="title">Image url</div>
+							  	<div class="property_container">
+							  		<label for="imageUrl">u</label>
+							  		<input  type="text" name="imageUrl" id="imageUrl"    />
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter parameter_contentUrl" >	
+							  	<div class="title">Include url</div>
+							  	<div class="property_container">
+							  		<label for="includeUrl">u</label>
+							  		<input  type="text" name="includeUrl" id="includeUrl"    />
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	
+							<!--
+<div class="inspector_parameter parameter_contentUrl"  >	
+							  	<div class="title">Include mode</div>
+							  	<div class="property_container"  >
+									<label for="includeMode">i</label>
+									<select id="includeMode" name="includeMode"  >
+											<option value="includeSVG-js">include SVG - js</option>
+											<option value="includeSVG-php">include SVG - php</option>
+											<option value="includeHTML-php">include HTML - php</option>
+											<option value="iframe">iframe</option>
+											<option value="inlineHTML">inline HTML</option>
+									</select>
+							  	</div>
+						  	</div>
+-->
+
+						  	
+						  	<div class="inspector_parameter  " >	
+							  	<div class="title">Inline content</div>
+							  	<div class="property_container">
+							  		<button name="inlineContent" id="editInlineContent_button"> Inline content... </button>
+							  	</div>
+						  	</div>
+						  	
+						  	<!--
+<div class="inspector_parameter parameter_contentUrl"  >	
+							  	<div class="title">Content Scrolling</div>
+							  	<div class="property_container"  >
+									<label for="scrolling">s</label>
+									<select id="scrolling" name="scrolling"  >
+											<option value="no">no</option>
+											<option value="yes">yes</option>
+									</select>
+							  	</div>
+						  	</div>
+-->
+						  			
+
+						  	<div class="inspector_parameter  " >	
+							  	<div class="title">Title and Description</div>
+							  	<div class="property_container">
+							  		<button  id="editTitleDescription_button"> Title - Desc... </button>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						</div><!-- GRAPHIC_PROPERTIES_2D_PANEL  -->
+
+
+						<div id="EFFECT_PROPERTIES_2D_PANEL"  >
+							
+							<div class="title" >Shadow Effect</div>
+
+						  	<div class="inspector_parameter  parameter_position_2D" >	
+							  	<div class="title">Offset</div>
+							  	<div class="property_container">
+							  		<label for="shadowOffsetX">x</label>
+							  		<input  type="text" name="shadowOffsetX" id="shadowOffsetX"  onclick="this.select();" />
+							  	</div>
+							  	<div class="property_container">														
+							  		<label for="shadowOffsetY">y</label>
+							  		<input  type="text" name="shadowOffsetY" id="shadowOffsetY"  onclick="this.select();" />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter" >	
+							  	<div class="title">Blur</div>
+							  	<div class="property_container">
+							  		<label for="shadowBlur">b</label>
+							  		<input type="text" name="shadowBlur" id="shadowBlur"  onclick="this.select();"  />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter" >	
+							  	<div class="title">Color</div>
+							  	<div class="property_container">
+						  			<div class="color_container">
+						  				<div id="shadowColor" class="color">
+						  				</div>
+						  			</div>
+							  	</div>
+						  	</div>
+						  	
+						  
+						</div> <!-- EFFECT_PROPERTIES_2D_PANEL  -->
+						
+						
+						
+						<div id="ANIMATION_PROPERTIES_2D_PANEL"  >
+							
+							<div class="title" >Animation</div>
+							
+							
+							<div class="animationPreview" style="width:100%; height:100px; position:relative; border:1px solid gray;  background-color:black; margin-bottom:10px; overflow:hidden; ">
+								<div id="ANIMATED_ELEMENT" style="position:absolute; color:white; font-size:16px; width:62px; height:18px; left:50%; margin-left:-31px; top:50%; margin-top:-9px;" >Animate</div>
+							</div>
+							
+							<div class="inspector_parameter parameter_instanceId" >	
+							  	<div class="title">Animation name</div>
+							  	<div class="property_container">
+							  		<label for="animationName">n</label>
+							  		<!-- <input type="text" name="name" id="name"  onclick="this.select();"  /> -->
+							  		<select id="ANIMATION_LIST" name="animationName" id="animationName">
+							  		<optgroup label="Utils">
+							          <option value="hide">hide</option>
+							        </optgroup>
+							        
+							        <optgroup label="Attention Seekers">
+							          <option value="bounce">bounce</option>
+							          <option value="flash">flash</option>
+							          <option value="pulse">pulse</option>
+							          <option value="rubberBand">rubberBand</option>
+							          <option value="shake">shake</option>
+							          <option value="swing">swing</option>
+							          <option value="tada">tada</option>
+							          <option value="wobble">wobble</option>
+							        </optgroup>
+							
+							        <optgroup label="Bouncing Entrances">
+							          <option value="bounceIn">bounceIn</option>
+							          <option value="bounceInDown">bounceInDown</option>
+							          <option value="bounceInLeft">bounceInLeft</option>
+							          <option value="bounceInRight">bounceInRight</option>
+							          <option value="bounceInUp">bounceInUp</option>
+							        </optgroup>
+							
+							        <optgroup label="Bouncing Exits">
+							          <option value="bounceOut">bounceOut</option>
+							          <option value="bounceOutDown">bounceOutDown</option>
+							          <option value="bounceOutLeft">bounceOutLeft</option>
+							          <option value="bounceOutRight">bounceOutRight</option>
+							          <option value="bounceOutUp">bounceOutUp</option>
+							        </optgroup>
+							
+							        <optgroup label="Fading Entrances">
+							          <option value="fadeIn">fadeIn</option>
+							          <option value="fadeInDown">fadeInDown</option>
+							          <option value="fadeInDownBig">fadeInDownBig</option>
+							          <option value="fadeInLeft">fadeInLeft</option>
+							          <option value="fadeInLeftBig">fadeInLeftBig</option>
+							          <option value="fadeInRight">fadeInRight</option>
+							          <option value="fadeInRightBig">fadeInRightBig</option>
+							          <option value="fadeInUp">fadeInUp</option>
+							          <option value="fadeInUpBig">fadeInUpBig</option>
+							        </optgroup>
+							
+							        <optgroup label="Fading Exits">
+							          <option value="fadeOut">fadeOut</option>
+							          <option value="fadeOutDown">fadeOutDown</option>
+							          <option value="fadeOutDownBig">fadeOutDownBig</option>
+							          <option value="fadeOutLeft">fadeOutLeft</option>
+							          <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+							          <option value="fadeOutRight">fadeOutRight</option>
+							          <option value="fadeOutRightBig">fadeOutRightBig</option>
+							          <option value="fadeOutUp">fadeOutUp</option>
+							          <option value="fadeOutUpBig">fadeOutUpBig</option>
+							        </optgroup>
+							
+							        <optgroup label="Flippers">
+							          <option value="flip">flip</option>
+							          <option value="flipInX">flipInX</option>
+							          <option value="flipInY">flipInY</option>
+							          <option value="flipOutX">flipOutX</option>
+							          <option value="flipOutY">flipOutY</option>
+							        </optgroup>
+							
+							        <optgroup label="Lightspeed">
+							          <option value="lightSpeedIn">lightSpeedIn</option>
+							          <option value="lightSpeedOut">lightSpeedOut</option>
+							        </optgroup>
+							
+							        <optgroup label="Rotating Entrances">
+							          <option value="rotateIn">rotateIn</option>
+							          <option value="rotateInDownLeft">rotateInDownLeft</option>
+							          <option value="rotateInDownRight">rotateInDownRight</option>
+							          <option value="rotateInUpLeft">rotateInUpLeft</option>
+							          <option value="rotateInUpRight">rotateInUpRight</option>
+							        </optgroup>
+							
+							        <optgroup label="Rotating Exits">
+							          <option value="rotateOut">rotateOut</option>
+							          <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+							          <option value="rotateOutDownRight">rotateOutDownRight</option>
+							          <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+							          <option value="rotateOutUpRight">rotateOutUpRight</option>
+							        </optgroup>
+							
+							        <optgroup label="Sliders">
+							          <option value="slideInDown">slideInDown</option>
+							          <option value="slideInLeft">slideInLeft</option>
+							          <option value="slideInRight">slideInRight</option>
+							          <option value="slideOutLeft">slideOutLeft</option>
+							          <option value="slideOutRight">slideOutRight</option>
+							          <option value="slideOutUp">slideOutUp</option>
+							        </optgroup>
+							
+							        <optgroup label="Specials">
+							          <option value="hinge">hinge</option>
+							          <option value="rollIn">rollIn</option>
+							          <option value="rollOut">rollOut</option>
+							        </optgroup>
+							      </select>
+							  	</div>
+						  	</div>
+						  			
+						  	<div class="inspector_parameter parameter_tweenBegin" >	
+							  	<div class="title">Delay</div>
+							  	<div class="property_container">
+							  		<label for="delay">b</label>
+							  		<input type="text" name="delay" id="delay"  onclick="this.select();"  />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter parameter_tweenDur" >	
+							  	<div class="title">Duration</div>
+							  	<div class="property_container">
+							  		<label for="duration">d</label>
+							  		<input type="text" name="duration" id="duration"  onclick="this.select();"  />
+							  	</div>
+						  	</div>
+						  	
+						  	<div class="inspector_parameter parameter_tweenRepeatCount" >	
+							  	<div class="title">Repeat count</div>
+							  	<div class="property_container">
+							  		<label for="iterationCount">n</label>
+							  		<input type="text" name="iterationCount" id="iterationCount"  onclick="this.select();"  />
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	
+						  	<div class="inspector_parameter "  >	
+							  	<div class="title">Fill mode</div>
+							  	<div class="property_container"  >
+									<label for="fillMode">f</label>
+									<select id="fillMode" name="fillMode"  >
+											<option value="none">none</option>
+											<option value="forwards">forwards</option>
+											<option value="backwards">backwards</option>
+											<option value="both">both</option>
+									</select>
+							  	</div>
+						  	</div>
+						  	
+						  	
+						  	<div class="inspector_parameter "  >	
+							  	<div class="title">Notice</div>
+							  	<div class="property_container" style="padding:0 10px 0 10px;"  >
+									To use these animations<br/>you have to include<br/>the animate.css file<br/>in your page.
+									<br/><br/>
+									info at:<br/><a href="http://daneden.github.io/animate.css/" target="_blank">daneden animate.css</a> 
+									<br/><br/>
+									download:<br/><a href="https://googledrive.com/host/0BwRlR3z6e0egZWdfSmJqSGZKZnM/animate.min.css" target="_blank">animate.min.css</a>
+									<br/>
+									
+							  	</div>
+						  	</div>
+						  	
+						  
+						</div> <!-- ANIMATION_PROPERTIES_2D_PANEL  -->
+						
+						
+						
+
+						<div id="FILL_STROKE_PROPERTIES_PANEL"  style="display:inline-block;"  >
+						  		<div id="FILL_STROKE_PROPERTIES">
+									<div id="STROKE_BUTTON" ><div></div></div>				
+									<div id="FILL_BUTTON" ></div>
+								</div>
+								<div id="SWAP_FILL_STROKE_BUTTON" ></div>
+								<div id="FILL_STROKE_TYPES">									
+									<div id="DIFFUSE_BUTTON"  ></div>
+									<div id="GRADIENT_BUTTON"  ></div>
+									<div id="PATTERN_BUTTON"  ></div>
+									<div id="NONE_BUTTON"  ></div>
+								</div>
+								<div id="FILL_STROKE_ALPHA" >
+									<div style="padding:5px;">Alpha</div>
+									<div id="ALPHA_SLIDER" class="slider"  >
+										<div></div>
+									</div>
+								</div>
+						</div><!-- FILL_STROKE_PROPERTIES_PANEL -->
+						
+		</div><!-- end panel -->
+
+
+		<ul id="WINDOWS_TOOLBAR" class="footer toolbar hbar"  >
+			<li id="RESOURCES_WIN_button" ><a></a></li>
+			<li id="LAYERS_WIN_button"  ><a></a></li>
+			<li id="EFFECTS_WIN_button" ><a></a></li>
+			<li id="ANIMATIONS_WIN_button" ><a></a></li>
+			<!-- <li id="DRIVE_FILE_BROWSER_WIN_button" ><a></a></li> -->
+		</ul>
+
+
+</div><!-- end column -->
+
+
+		
+		
+		
+		
+		
+		
+	
+			</div> <!-- CONTENT -->
+			
+				
+			
+			
+			
+		
+		
+		<div id="WINDOWS">
+		
+			<div id="MESSAGE_WIN" class="win dropShadow message_win closed" >
+				<div id="WIN_HEAD" class="head hbar">
+					<div id="WIN_TITLE" class="title">Message</div>
+				</div>
+				<div id="WIN_CLOSE_BUTTON" class="close_button"></div>
+				<div id="WIN_COLLAPSE_BUTTON" class="collapse_button"></div>
+				<div id="WIN_CONTENT" class="content" >
+					<textarea id="WIN_MESSAGE_CONTENT" ></textarea>					
+				</div>
+				<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+			</div> <!-- MESSAGE_WIN -->
+			
+			
+			
+		<div id="OPEN_DOCUMENT_WIN" class="win openDocument_win dropShadow closed" >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Open document</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content">
+				<div id="FILES_VIEW_HEADER" class="hbar" >
+					<div id="DIR_UP_BUTTON"></div>
+					<div id="SELECTED_DOCUMENT_TITLE">Select a file</div>
+				</div>
+				<ul id="FILES_VIEW"></ul>
+				<div id="FILES_VIEW_FOOTER" class="hbar" >
+					<input id="CANCEL_BUTTON" name="cancel" type="button"  value="     Cancel    " onclick="" />
+					<input id="OPEN_BUTTON" name="open" type="button" disabled="disabled"  value="      Open      "/>
+				</div>					
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+		
+		<div id="SAVE_DOCUMENT_WIN" class="win saveDocument_win dropShadow closed" >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Save document file</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content">
+				<div id="FILES_VIEW_HEADER" class="hbar">
+					<div id="DIR_UP_BUTTON"></div>
+					Save with name: <input id="INPUT_FILE_NAME" name="fileName" type="text"  value="untitled" />
+				</div>
+				<ul id="FILES_VIEW"></ul>
+				<div id="FILES_VIEW_FOOTER" class="hbar" >
+					<input id="CREATE_DIR_BUTTON" name="createDir" style="float:left;" type="button"  value="   New folder…  " />
+					<input id="CANCEL_BUTTON" name="cancel"  type="button"  value="     Cancel    "  />
+					<input id="SAVE_BUTTON" name="save"  type="button"  value="      Save      "/>
+				</div>					
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+
+			
+			
+		<div id="INCLUDES_EDIT_WIN" class="win dropShadow includesEdit_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Include CSS and JS files</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content" >
+				<div>
+					<div>
+						CSS
+						<textarea id="CSS_INCLUDES_TEXT_CONTAINER" onblur="window.scroll(0,0);" ></textarea>
+					</div>
+					<div>
+						Javascript
+						<textarea id="JS_INCLUDES_TEXT_CONTAINER" onblur="window.scroll(0,0);" ></textarea>																	
+					</div>
+				</div>
+				<input id="SAVE_INCLUDES_BUTTON" type="button" style="position:absolute; bottom:5px; width:100px; right:14px; "  value="Apply" />
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+		
+		<!--
+<div id="INLINE_CONTENT_EDIT_WIN" class="win dropShadow inlineContentEdit_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Inline content</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content" >
+				<textarea id="INLINE_CONTENT_TEXT_CONTAINER" onblur="window.scroll(0,0);" ></textarea>									
+				<input id="UPDATE_INLINE_CONTENT_BUTTON" type="button" style="position:absolute; bottom:5px; width:100px; right:14px; "  value="apply" />
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+-->
+		
+		<div id="INLINE_CONTENT_EDIT_WIN" class="win dropShadow inlineContentEdit_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Inline content</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content" >
+				<textarea id="INLINE_CONTENT_TEXT_CONTAINER" onblur="window.scroll(0,0);" ></textarea>													
+			</div>
+			<!-- e fuori dal content perchè codemirror ridimensiona la textarea al 100% del content in altezza -->
+			<input id="UPDATE_INLINE_CONTENT_BUTTON" type="button" style="position:absolute; bottom:5px; width:100px; right:20px; "  value="apply" />
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+
+				
+		<!--
+
+		<div id="TEXTBOX_EDIT_WIN" class="win dropShadow textBoxEdit_win"  >
+			<div id="WIN_HEAD" class="head bar">
+				<div id="WIN_TITLE" class="title">Edit Text</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content" >
+				<textarea id="TEXT_CONTAINER" onblur="window.scroll(0,0);" ></textarea>									
+				<input id="UPDATE_TEXT_BUTTON" type="button" style="position:absolute; bottom:5px; width:100px; right:14px; "  value="apply" />
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+-->
+		
+		
+		
+		<div id="TITLE_DESCRIPTION_EDIT_WIN" class="win dropShadow titleDescriptionEdit_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Title</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button">
+			</div>
+			<div id="WIN_CONTENT" class="content" >
+				<div>
+					<div>
+						Title
+						<textarea id="ELEMENT_TITLE" onblur="window.scroll(0,0);" ></textarea>
+					</div>
+					<div>
+						Description
+						<textarea id="ELEMENT_DESCRIPTION" onblur="window.scroll(0,0);" ></textarea>																	
+					</div>
+				</div>
+				<input id="SAVE_TITLE_DESCRIPTION_BUTTON" type="button" style="position:absolute; bottom:5px; width:100px; right:14px; "  value="Apply" />
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+		
+		<div id="RESOURCES_WIN" class="win dropShadow resources_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Library</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button"></div>
+			<div id="WIN_COLLAPSE_BUTTON" class="collapse_button"></div>
+			
+			<div id="WIN_CONTENT" class="content"  >				
+					
+					<div id="RESOURCES_PANELS" class="radioPanels"  >
+						<ul id="FONTS_LIBRARY_PANEL" class="scrollableY darkScrollbar recordList panel activated" ></ul>
+						<div id="SYMBOLS_LIBRARY_PANEL" class="panel" >
+							<div class="header hbar" >Search <input type="search" name="googlesearch"  placeholder="insert a word"> in openclipart.org</div>
+							<ul class="scrollableY darkScrollbar recordList" ></ul>
+						</div>	
+						<ul id="GRADIENTS_LIBRARY_PANEL" class="scrollableY darkScrollbar recordList panel" ></ul>
+						<ul id="PATTERNS_LIBRARY_PANEL" class="scrollableY darkScrollbar recordList panel" ></ul>
+					</div>
+
+					
+					
+					<ul id="TABS_RESOURCES_PANELS" class="footer toolbar hbar" style="overflow:visible;" >
+						
+						<li id="FONTS_LIBRARY_button" class="selected" >	
+							<ul  class="popupMenu dropShadow" style="left:0px; bottom:24px;"  >
+								<li libraryType="fontLibrary" category="Sans Serif" title="" >Font Sans Serif</li>
+								<li libraryType="fontLibrary" category="Display" title="" >Font Display</li>
+								<li libraryType="fontLibrary" category="Serif" title="" >Font Serif</li>
+								<li libraryType="fontLibrary" category="Handwriting" title="" >Font Handwriting</li>
+								<!-- <li libraryType="fontLibrary" category="Miscellanea" title="" >Font Miscellanea</li> -->
+					    	</ul>
+							<a></a>
+						</li>
+						
+						<li id="SYMBOLS_LIBRARY_button" >
+							<ul class="popupMenu dropShadow" style="left:0px; bottom:24px;  "  >
+<!--								<li url="../../DATA/janvas/library2D/symbols/girls/index.html"  title="">Silhouettes</li>-->
+								<li url="../../DATA/janvas/library2D/symbols/animals/animals.html"  title="">Animals</li>
+								<li url="../../DATA/janvas/library2D/symbols/user_interface/user_interface.html"  title="">User interface</li>
+								<li url="../../DATA/janvas/components/components.html"  title="">Components</li>
+								<li url="../../DATA/janvas/library2D/symbols/furniture/furniture.html"  title="">Furniture</li>
+								<li url="../../DATA/janvas/library2D/symbols/decorations/decorations.html"  title="">Decorations</li>
+								<li url="../../DATA/janvas/library2D/symbols/office/office.html"  title="">Office</li>
+<!-- 								<li url="http://openclipart.org/search/json/?query=christmas&page=1&amount=20"  title="">Openclipart.org</li> -->
+					    	</ul>
+							<a></a>
+						</li>
+						
+						<li id="GRADIENTS_LIBRARY_button" >
+							<ul class="popupMenu dropShadow" style="left:0px; bottom:24px;  "  >
+								<li url="../../DATA/janvas/library2D/gradients/linears.html"  title="">Linear gradients</li>
+		    					<li url="../../DATA/janvas/library2D/gradients/radials.html"  title="">Radial gradients</li>
+					    	</ul>
+							<a></a>
+						</li>
+						
+						<li id="PATTERNS_LIBRARY_button" >
+							<ul  class="popupMenu dropShadow" style="left:0px; bottom:24px;  "  >
+								<li url="../../DATA/janvas/library2D/patterns/patterncooler.html"  title="">patterncooler.com</li>
+								<li url="../../DATA/janvas/library2D/patterns/subtlepatterns.html"  title="">subtlepatterns.com</li>
+					    	</ul>
+							<a></a>
+						</li>
+						
+						<!--
+<li id="ANIMATION_LIBRARY_button" >
+							<a></a>
+						</li>
+-->
+						
+					</ul>				
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+
+				
+
+		
+		
+		<div id="LAYERS_WIN" class="win dropShadow layers_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Layers</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button"></div>
+			<div id="WIN_COLLAPSE_BUTTON" class="collapse_button"></div>
+			
+			<div id="WIN_CONTENT" class="content"  >				
+					
+					<div id="LAYERS_2D_PANEL" class="listView scrollableY darkScrollbar" ></div>
+					
+					<ul id="LAYERS_EDITING_TOOLBAR" class="footer toolbar hbar" style="overflow:visible;" >
+			        		<li id="CREATE_LAYER_button"   title=""><a></a></li>
+			        		<li id="REMOVE_LAYER_button"   title=""><a></a></li>
+			        		<li id="MOVE_LAYER_UP_button"   title=""><a></a></li>
+			        		<li id="MOVE_LAYER_DOWN_button"   title=""><a></a></li>
+			        		<li id="MOVE_SELECTION_IN_LAYER_button"   title=""><a></a></li>
+					</ul>				
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+		
+		
+		
+		<div id="EFFECTS_WIN" class="win dropShadow effects_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Effects</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button"></div>
+			<div id="WIN_COLLAPSE_BUTTON" class="collapse_button"></div>
+			
+			<div id="WIN_CONTENT" class="content"  >				
+					
+					<div id="EFFECTS_2D_PANEL" class="listView scrollableY darkScrollbar" ></div>
+					
+					<ul id="EFFECTS_EDITING_TOOLBAR" class="footer toolbar hbar" style="overflow:visible;" >
+							<li id="REMOVE_EFFECT_button"   title=""><a></a></li>
+	        				<li id="MOVE_EFFECT_UP_button"   title=""><a></a></li>
+	        				<li id="MOVE_EFFECT_DOWN_button"   title=""><a></a></li>
+					</ul>				
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+		
+		<div id="ANIMATIONS_WIN" class="win dropShadow animations_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Animation</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button"></div>
+			<div id="WIN_COLLAPSE_BUTTON" class="collapse_button"></div>
+			
+			<div id="WIN_CONTENT" class="content"  >				
+					
+					<div id="ANIMATIONS_2D_PANEL" class="listView scrollableY darkScrollbar" ></div>
+					
+					<ul id="ANIMATIONS_EDITING_TOOLBAR" class="footer toolbar hbar" style="overflow:visible;" >
+							<li id="CREATE_ANIMATION_button"   title=""><a></a></li>
+							<li id="REMOVE_ANIMATION_button"   title=""><a></a></li>
+					</ul>				
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+		
+		
+		<div id="DRIVE_FILE_BROWSER_WIN" class="win dropShadow driveFileBrowser_win closed"  >
+			<div id="WIN_HEAD" class="head hbar">
+				<div id="WIN_TITLE" class="title">Google Drive</div>
+			</div>
+			<div id="WIN_CLOSE_BUTTON" class="close_button"></div>
+			<div id="WIN_COLLAPSE_BUTTON" class="collapse_button"></div>
+			
+			<div id="WIN_CONTENT" class="content"  >				
+					
+					<div id="DRIVE_FILE_BROWSER_PANEL" onActivate="openGoogleDrive" class="treeView scrollableY darkScrollbar" ></div>
+					
+					<ul id="DRIVE_FILE_BROWSER_TOOLBAR" class="footer toolbar hbar" style="overflow:visible;" >
+							
+							<li id="NEW_FOLDER_button"   title="New folder"><a></a></li>
+					        <li id="NEW_SHARED_WEB_FOLDER_button"   title="New shared folder"><a></a></li>
+							<li id="OPEN_AS_WEB_PAGE_button" title="Open with Browser" ><a></a></li>
+							<li id="REMOVE_FILE_button"   title="Remove file"><a></a></li>
+							<li id="RENAME_FILE_button"   title="Rename file"><a></a></li>
+					        <li id="DOWNLOAD_FILE_button" title="Download file"><a></a></li>
+					        <li id="UPLOAD_FILE_button"   title="Upload file"><a></a><input id="UPLOAD_FILE_TEXTFIELD" type="file" style="position:absolute; display: block; left:0; top:0; opacity:0; width:100%; cursor:pointer;" /></li>
+<!--
+							<li id="EDIT_button" >
+								<ul  class="popupMenu dropShadow" style="right:0; bottom:0; "   >
+					        		<li  id="CREATE_FILE_JS_menuItem"  class="js_icon16x16" style="background-position-x: 8px;" fileExtension="js"   fileMimeType="text/javascript" title="">New file - JS</li>
+					        		<li  id="CREATE_FILE_CSS_menuItem" class="css_icon16x16" style="background-position-x: 8px;" fileExtension="css"  fileMimeType="text/css" title="">New file - CSS</li>
+					        		<li  id="CREATE_FILE_HTML_menuItem" class="html_icon16x16" style="background-position-x: 8px;" fileExtension="html" fileMimeType="text/html" title="">New file - HTML</li>
+					        		<li class="divisor"></li>
+					        		<li  id="NOTIFICATION_SERVER_menuItem"   title="">Notification Server...</li>
+					        		<li  id="SEND_NOTIFICATION_menuItem"   title="">Send Notification</li>					        		
+					        	</ul>
+					        	<a></a>
+							</li>
+-->							
+							<li id="LOADING_ICON" ><a></a></li>
+					</ul>				
+			</div>
+			<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+		</div>
+		
+		
+			<div id="SAVE_PROGRESS_WIN" class="win dropShadow saveProgress_win closed"  >
+				<div id="WIN_HEAD" class="head hbar">
+					<div id="WIN_TITLE" class="title">Save progress</div>
+				</div>
+				<div id="WIN_CLOSE_BUTTON" class="close_button">
+				</div>
+				<div id="WIN_CONTENT" class="content" >
+					<div>
+						<div id="LABEL" >Document saving...</div>
+						<progress id="BAR"  max="100" ></progress>
+					</div>
+				</div>
+				<div id="WIN_RESIZE_BUTTON" class="resize_button"></div>
+			</div><!-- SAVE_PROGRESS_WIN -->
+			
+		</div><!-- WINDOWS -->
+		
+		
+		<div id="DIALOGS">	
+		</div> <!-- DIALOGS -->
+		
+	</div>
+	
+	
+	<div id="CONTEXT_MENUS" oncontextmenu="return false;" >
+	
+		
+		
+		
+		<ul id="EDIT_2D_CONTEXT_MENU" class="popupMenu dropShadow" style="left:200px; top:45px; " >
+		        	<li id="FILL_menuItem" >Fill</li>
+			        <li id="STROKE_menuItem"  >Stroke</li>
+			        <li id="STROKE_WIDTH_menuItem"  >Stroke width</li>
+			        <li class="divisor"></li>
+			        <li id="DUPLICATE_menuItem"  >Duplicate</li>
+	        		<li id="GROUP_menuItem"  >Group</li>
+	        		<li id="UNGROUP_menuItem"   >Ungroup</li>
+	        		<li class="divisor"></li>
+					<li id="LOCK_SELECTION_menuItem" >Lock selection</li>
+					<li id="UNLOCK_ALL_menuItem" >Unlock all</li>
+        	</ul>
+			
+			<ul id="LINE_OPTIONS_CONTEXT_MENU" class="popupMenu dropShadow" style="left:200px; top:45px;" >
+			        <li  value="1" id="LINE_WIDTH_menuItem"  >1 pt</li>
+			        <li  value="2" id="LINE_WIDTH_menuItem"  >2 pt</li>
+					<li  value="3" id="LINE_WIDTH_menuItem" >3 pt</li>
+					<li  value="4" id="LINE_WIDTH_menuItem" >4 pt</li>
+					<li  value="5" id="LINE_WIDTH_menuItem" >5 pt</li>
+	        		<li  value="6" id="LINE_WIDTH_menuItem"  >6 pt</li>
+	        		<li  value="7" id="LINE_WIDTH_menuItem"  >7 pt</li>
+	        		<li  value="8" id="LINE_WIDTH_menuItem"   >8 pt</li>
+	        		<li class="divisor"></li>
+			        <li  id="LINE_CAP_BUTT_menuItem"  >Line cap Butt</li>
+			        <li  id="LINE_CAP_ROUND_menuItem"  >Line cap Round</li>
+					<li  id="LINE_CAP_SQUARE_menuItem" >Line cap Square</li>
+					<li  id="LINE_JOIN_MITER_menuItem" >Line join Square</li>
+					<li  id="LINE_JOIN_ROUND_menuItem" >Line join Round</li>
+	        		<li  id="LINE_JOIN_BEVEL_menuItem"  >Line join Bevel</li>		        
+	        </ul>
+	        
+	        <div id="GRADIENT_EDITOR" class="dropShadow">
+				<div id="GRADIENT_ALPHA_BACKGROUND" >	
+					<div id="GRADIENT" >
+						<div id="GRADIENT_POINT" style="left: 0px;" ><div id="COLOR"></div></div>
+						<div id="GRADIENT_POINT" style="left: 50px;" ><div id="COLOR"></div></div>
+						<div id="GRADIENT_POINT" style="left: 150px;" ><div id="COLOR"></div></div>
+					</div>
+				</div>
+				<select id="GRADIENT_TYPE"   >
+						<option  value="linear">Linear</option>
+						<option  value="radial">Radial</option>
+				</select>
+			</div>
+		
+			
+			<div id="COLOR_PICKER" class="dropShadow">	
+				<input id="HEX_COLOR_INPUT" type="text" onblur="window.scrollTo(0, 0);" onclick="select();" />
+				<div id="ALPHA_BACKGROUND" >					
+					<div id="ALPHA_PANEL" >
+						<div id="ALPHA_POINT" ></div>
+					</div>
+				</div>
+				<div id="HUE_PANEL" >
+					<div id="HUE_POINT" ></div>
+				</div>
+				<div id="SATURATION_COLOR" >
+					<div id="SATURATION_PANEL" >
+						<div id="SATURATION_POINT" ></div>
+					</div>
+				</div>
+			</div>
+		
+		
+	</div> <!-- CONTEXT_MENUS -->
+	
+	
+	<div id="AUTH_REQUEST_PANEL" class="authRequestPanel dropShadow hbar" >
+			<div class="google_drive_logo" ></div>
+			<div class="info" >
+			Google Drive<br/>
+			Authorization<br/>
+			required
+			</div>
+			<button id="authorize_button" >Authorize</button>
+			<div id="close_button" ></div>
+		</div>
+		
+		
+		
+  <div id="ABOUT_PANEL" class="dialogPanel aboutPanel dropShadow  hbar" >
+			<!-- <div class="versionInfo" >version 3.0.0</div> -->
+			<div class="logo" style="" ></div>
+			<div class="copyrightInfo" >
+				Copyright © XOSystem - All rights reserved - <a href="http://www.janvas.com" target="_blank" >janvas.com</a>
+			</div>
+	</div>
+	
+	
+	<div id="ADVERTISING_PREMIUM_PANEL" class="dialogPanel dropShadow  hbar" >			
+			<div class="logo" ></div>
+			<!--
+<div class="info" >
+				Your FREE account is LIMITED<br/>
+				to 10 saves<br/>
+				in a time range of 30 days.
+			</div>
+-->
+			<div id="ADVERTISING_PREMIUM_LINK" ></div>
+			<div id="ACCOUNT_FREE_STATUS" class="account_free_status" ></div>
+			<div id="close_button" ></div>
+	</div>
+	
+	
+	<!--
+<div id="ADVERTISING_PREMIUM_PANEL" class="dialogPanel dropShadow  hbar" >			
+			<img src="resources/brand/advertising_premium.jpg" ></img>
+			<div class="logo" ></div>
+			<div class="account_premium_info" >
+				Expand your creativity<br/>with<br/>				
+				<div id="ADVERTISING_PREMIUM_LINK" >PREMIUM ACCOUNT<br/>for only 12€ a year</div>
+			</div>
+			<div class="account_free_info" >
+				<span style="color:white;">Your FREE account is LIMITED</span><br/>
+				 to 10 saves in a time range<br/>of 30 days.
+			</div>
+			<div id="ACCOUNT_FREE_STATUS" class="account_free_status" >
+				
+			</div>
+			<div id="close_button" ></div>
+	</div>
+-->
+
+	
+	
+</body>
+
+</html>
+
