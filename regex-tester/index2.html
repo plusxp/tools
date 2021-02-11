@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Crystal regex tester</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <style>
+    #templates { display: none; }
+
+    body {
+      background: #1e1f1c;
+      color: #f1f8f2;
+    }
+
+    footer {
+      background-color: #000;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+
+    footer a {
+      color: #a6e22a;
+    }
+
+    footer a:hover {
+      color: #89bf1a;
+    }
+
+    footer a img {
+      height: 14px;
+    }
+
+    footer .text-right a {
+      margin-left: 10px;
+    }
+
+    h5 {
+      color: #a6e22a;
+    }
+
+    input {
+      background: #272822 !important;
+      border-color: #23241F !important;
+      color: #f8f8f2 !important;
+    }
+
+    textarea {
+      background: #272822 !important;
+      border-color: #23241F !important;
+      color: #e6cf57 !important;
+    }
+
+    input:focus, textarea:focus {
+      box-shadow: 0 0 0 .1rem #a6e22a !important;
+    }
+
+    input::placeholder {
+      color: #595953 !important;
+      opacity: 1;
+    }
+
+    .alert.alert-danger {
+      background: #fd971f;
+      border-color: #fd971f;
+      color: #54320a;
+    }
+
+    .reference table code {
+      white-space: nowrap;
+      color: #56d9ef;
+    }
+
+    .reference table tr td:first-child {
+      padding-right: 1rem;
+    }
+
+    .reference table tr td {
+      vertical-align: top;
+    }
+
+    #match_result {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      color: #f8f8f2;
+    }
+
+    .marked {
+      background: #f92672;
+      padding: 3px 2px 1px 2px;
+      border-radius: 6px;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .special {
+      color: #664e97;
+      padding-left: 2px;
+      font-size: 13px;
+      font-weight: bolder;
+      letter-spacing: 0.6px;
+    }
+
+    .special.lf::after {
+      content: "\\n";
+    }
+    .special.cr::after {
+      content: "\\r";
+    }
+    .special.tab::after {
+      content: "\\t";
+    }
+    .special.space::after {
+      content: "·";
+      padding-left: 1px;
+      padding-right: 3px;
+    }
+
+    .match_group:first-child {
+      margin-top: 2rem;
+    }
+
+    .match_group {
+      color: #f92672;
+    }
+
+    .match_list {
+      list-style-type: none;
+      padding-left: 1rem;
+      color: #664e97;
+    }
+
+    .match_list .key {
+      padding-right: 2rem;
+    }
+
+    .match_list .value {
+      color: #f8f8f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-3">Crystal regex tester</h1>
+
+    <div class="form-row">
+      <div class="form-group col-md-11">
+        <h5>Regular expression:</h5>
+        <input id="regex" name="regex" class="form-control form-control-lg" type="text" placeholder="" value="">
+      </div>
+      <div class="form-group col-md-1">
+        <h5>Options:</h5>
+        <input id="options" name="options" class="form-control form-control-lg" type="text" placeholder="imx">
+      </div>
+    </div>
+
+    <h5>Test string:</h5>
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <textarea id="text" name="text" class="form-control form-control-lg" rows="16" maxlength="50000"></textarea>
+      </div>
+      <div class="col-md-6">
+        <div id="errors"></div>
+        <div id="match_result"></div>
+        <div id="match_groups"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <h2 class="text-center">Reference</h2>
+
+    <div class="row reference mt-3">
+      <div class="col-md-6">
+        <table>
+          <tbody>
+            <tr><td><code>[abc]</code></td><td>a, b, or c</td></tr>
+            <tr><td><code>[^abc]</code></td><td>any character except a, b, or c</td></tr>
+            <tr><td><code>[a-z]</code></td><td>any character from range a-z</td></tr>
+            <tr><td><code>[a-z0-9]</code></td><td>any character from range a-z or 0-9</td></tr>
+            <tr><td><code>.</code></td><td>any character</td></tr>
+            <tr><td><code>(...)</code></td><td>group capture</td></tr>
+            <tr><td><code>(a|b)</code></td><td>a or b (with capture)</td></tr>
+            <tr><td><code>(?:a|b)</code></td><td>a or b (without capture)</td></tr>
+            <tr><td><code>a?</code></td><td>zero or one of a</td></tr>
+            <tr><td><code>a*</code></td><td>zero or more of a</td></tr>
+            <tr><td><code>a+</code></td><td>one or more of a</td></tr>
+            <tr><td><code>a{3}</code></td><td>exactly 3 of a</td></tr>
+            <tr><td><code>a{3,}</code></td><td>3 or more of a</td></tr>
+            <tr><td><code>a{3,6}</code></td><td>between 3 and 6 of a</td></tr>
+            <tr><td><code>\s</code></td><td>whitespace character</td></tr>
+            <tr><td><code>\S</code></td><td>non-whitespace character</td></tr>
+            <tr><td><code>\d</code></td><td>digit</td></tr>
+            <tr><td><code>\D</code></td><td>non-digit</td></tr>
+            <tr><td><code>\w</code></td><td>word character (letter, number, underscore)</td></tr>
+            <tr><td><code>\W</code></td><td>non-word character</td></tr>
+            <tr><td><code>^</code></td><td>beginning of line</td></tr>
+            <tr><td><code>$</code></td><td>end of line</td></tr>
+            <tr><td><code>\A</code></td><td>beginning of string</td></tr>
+            <tr><td><code>\z</code></td><td>end of string</td></tr>
+            <tr><td><code>\Z</code></td><td>end of string (matches just before newline if string ends with a newline)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table>
+          <tbody>
+            <tr><td><code>\b</code></td><td>word boundary</td></tr>
+            <tr><td><code>\B</code></td><td>non-word boundary</td></tr>
+            <tr><td><code>(?:...)</code></td><td>non-capturing group</td></tr>
+            <tr><td><code>(?&lt;foo&gt;...)</code></td><td>named capture</td></tr>
+            <tr><td><code>(?=abc)</code></td><td>positive lookahead: ensures that the following characters match abc, but doesn't include those characters in the matched text</td></tr>
+            <tr><td><code>(?!abc)</code></td><td>negative lookahead: ensures that the following characters do not match abc, but doesn't include those characters in the matched text</td></tr>
+            <tr><td><code>(?&lt;=abc)</code></td><td>positive lookbehind: ensures that the preceding characters match abc, but doesn't include those characters in the matched text</td></tr>
+            <tr><td><code>(?&lt;!abc)</code></td><td>negative lookbehind: ensures that the preceding characters do not match abc, but doesn't include those characters in the matched text</td></tr>
+            <tr><td><code>\1</code></td><td>use the result of group capture 1</td></tr>
+            <tr><td><code>\k&lt;foo&gt;</code></td><td>use the result of named group capture foo</td></tr>
+            <tr><td><code>(?1)</code></td><td>indexed subroutine (repeat the pattern of group 1)</td></tr>
+            <tr><td><code>(?&amp;foo)</code></td><td>named subroutine (repeat the pattern of group named foo)</td></tr>
+            <tr><td><code>(?(DEFINE)...)</code></td><td>predefined subroutines</td></tr>
+            <tr><td><code>(?#...)</code></td><td>comment</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          Developed &amp; maintained by <a href="http://github.com/qbart">Bartłomiej Wójtowicz</a>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="https://github.com/Selleo/crystular">View on GitHub</a>
+          <a href="https://github.com/Selleo/crystular/issues">Report issue</a>
+          <a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://camo.githubusercontent.com/3c9c6f55a589dfb4a573b4b5502641666d33a06c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d79656c6c6f772e7376673f7374796c653d666c61742d737175617265" alt="License: MIT" data-canonical-src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" style="max-width:100%;height: 14px;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="templates">
+    <div id="tmpl_match">
+      <h6 class="match_group"></h6>
+      <ul class="match_list"></ul>
+    </div>
+
+    <div id="tmpl_match_item">
+      <table>
+        <tbody>
+          <tr>
+            <td class="key"></td>
+            <td class="value"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="tmpl_alert">
+      <div class="alert alert-danger fade show" role="alert">
+        <strong></strong> <span></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+  <script>
+    function clearOutput() {
+      $("#errors").empty();
+      $("#match_result").empty();
+      $("#match_groups").empty();
+    }
+
+    function tokenize(text) {
+      var tokens = [];
+      var buf = "";
+      for (var i = 0; i < text.length; i++) {
+        var char = text.charAt(i);
+        if (char === '\n' || char === '\r' || char === '\t' || char === ' ') {
+          if (buf !== "") {
+            tokens.push(buf);
+            buf = "";
+          }
+          tokens.push(char);
+        } else {
+          buf += char;
+        }
+      }
+
+      if (buf !== "")
+        tokens.push(buf);
+
+      return tokens;
+    }
+
+    function appendText(node, text) {
+      var tokens = tokenize(text);
+      tokens.forEach(function(token) {
+        if (token === '\t') {
+          node.append($('<span class="special tab" />'));
+        } else if (token === ' ') {
+          node.append($('<span class="special space" />'));
+        } else if (token === '\r') {
+          node.append($('<span class="special cr" />'));
+        } else if (token === '\n') {
+          node.append($('<span class="special lf" />'));
+          node.append($('<br>'));
+        } else {
+          node.append(document.createTextNode(token));
+        }
+      });
+
+      return node;
+    }
+
+    function handleSuccess(result, s) {
+      var tmplMatch = $("#tmpl_match");
+      var tmplMatchItem = $("#tmpl_match_item table tbody");
+      var matchResult = $("#match_result");
+      var matchGroups = $("#match_groups");
+
+      clearOutput();
+      var index = 1;
+
+      result.matches.forEach(function(match) {
+        var tmpl = tmplMatch.clone();
+        tmpl.find(".match_group").text("Match " + index);
+        var list = tmpl.find(".match_list");
+
+        match.forEach(function(group) {
+          var item = tmplMatchItem.clone();
+          item.find(".key").text(group.key);
+          appendText(item.find(".value"), group.text);
+          list.append(item.children());
+        });
+
+        matchGroups.append(tmpl.children());
+        ++index;
+      });
+
+      var start = 0;
+      var buf = $("<div/>");
+
+      result.ranges.forEach(function(range) {
+        var a = range[0], b = range[1];
+        var text = s.substring(start, a);
+        var matchedText = s.substring(a, b);
+
+        appendText(buf, text);
+        if (a === b) {
+          buf.append($('<span class="marked boundry" />'));
+        } else {
+          buf.append(appendText($('<span class="marked" />'), matchedText));
+        }
+
+        start = b;
+      });
+      appendText(buf, s.substring(start, s.length));
+
+      matchResult.append(buf);
+    }
+
+    function handleError(msg) {
+      clearOutput();
+      var tmpl = $("#tmpl_alert").clone();
+      var parts = msg.split(": ");
+
+      tmpl.find("strong").text(parts.shift());
+      tmpl.find("span").text(parts.join(": "));
+
+      $("#errors").html(tmpl.children());
+    }
+
+    function getParams() {
+      return {
+        regex: $("#regex").val(),
+        options: $("#options").val(),
+        text: $("#text").val()
+      };
+    }
+
+    function send() {
+      var body = getParams();
+
+      if (body.regex === "" ||  body.text === "") {
+        clearOutput();
+        return;
+      }
+
+      $.ajax({
+        url: "/api/test_regex",
+        type: "POST",
+        data: JSON.stringify(body),
+        contentType: "application/json",
+        dataType: "json",
+        success: function(response) {
+          handleSuccess(response.result, body.text);
+        }
+      }).fail(function(response) {
+        if (response.status === 422) {
+          handleError(response.responseJSON.error);
+        } else {
+          handleError(response.statusText);
+        }
+      });
+    }
+
+    $(function() {
+      $("#regex").on('input', $.debounce(450, send));
+      $("#options").on('input', $.debounce(450, send));
+      $("#text").on('input', $.debounce(450, send));
+
+      send();
+    });
+  </script>
+</body>
+</html>
+
